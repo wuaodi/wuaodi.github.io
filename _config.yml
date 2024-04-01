@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Lorem ipsum"
-description              : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. "
-repository               : "RayeRen/acad-homepage.github.io"
+title                    : "Aodi Wu"
+description              : "Audi Wu is currently a Ph.D. student at the University of Chinese Academy of Sciences. "
+repository               : "wuaodi/wuaodi.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
