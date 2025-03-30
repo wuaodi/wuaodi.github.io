@@ -2,4 +2,4 @@
 
 我本科毕业于南京航空航天大学自动化学院，硕士毕业于中国科学院空间应用工程与技术中心。
 
-我的研究兴趣包括：非合作航天器相对导航、多传感器融合感知、域自适应、单视角三维结构预测、相机在轨自动曝光对焦、具身智能等。 <a href='https://scholar.google.com/citations?user=tBhUcJ8AAAAJ'><img src='./images/Google_Scholar_logo.png' style='width: 6em;'></a>
+我的研究兴趣包括：非合作航天器相对导航、多传感器融合感知、域自适应、单视角三维结构预测、相机在轨自动曝光对焦、具身智能等。 <a href='https://scholar.google.com/citations?user=tBhUcJ8AAAAJ'><img src='./images/Google_Scholar_logo.png' style='width: 6em;'></a> <strong><span id='total_cit'>10+</span></strong></a>
