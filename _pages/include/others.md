@@ -7,4 +7,4 @@
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 
 # 🚀 Tools
-- *提升效率*：[工具总结](https://docs.qq.com/doc/DQURmaENZVUJMQnVE)
+- **提升效率**：[工具总结](https://docs.qq.com/doc/DQURmaENZVUJMQnVE)
