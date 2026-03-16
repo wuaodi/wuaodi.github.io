@@ -2,41 +2,16 @@
 
 # Selected Projects
 
-<div class="project-grid">
-  <div class="project-card">
-    <h3>SpaceMind</h3>
-    <p>
-      An MCP-based space agent architecture that fuses large and small models for perception,
-      decision-making, and control in on-orbit servicing.
-    </p>
-    <p class="pub-links"><a href="https://github.com/wuaodi/SpaceMind">GitHub</a></p>
-  </div>
+- **SpaceMind**: An MCP-based space agent architecture for perception, decision-making, and control in on-orbit servicing.  
+  [[GitHub](https://github.com/wuaodi/SpaceMind)]
 
-  <div class="project-card">
-    <h3>SpaceSense-Bench / MM-SPACE</h3>
-    <p>
-      A large-scale multimodal benchmark for spacecraft semantic perception, depth estimation,
-      pose estimation, and more, built on UE5 and AirSim.
-    </p>
-  </div>
+- **SpaceSense-Bench / MM-SPACE**: A large-scale multimodal benchmark for spacecraft perception and pose estimation, built on UE5 and AirSim.  
+  [[Repository](https://github.com/wuaodi/SpaceSense-Bench)] [[Paper](https://arxiv.org/abs/2603.09320)] [[Project Page](https://wuaodi.github.io/SpaceSense-Bench/)] [[Dataset](https://huggingface.co/datasets/Alvin16/SpaceSense-Bench/tree/main/raw)]
 
-  <div class="project-card">
-    <h3>Cross-domain Spacecraft Segmentation</h3>
-    <p>
-      Domain-gap-aware segmentation for spacecraft parts, combining synthetic data, edge consistency,
-      and cross-domain generalization.
-    </p>
-    <p class="pub-links"><a href="https://github.com/wuaodi/cross-domain_spacecraft_segmentation">GitHub</a></p>
-  </div>
+- **Cross-domain Spacecraft Segmentation**: Domain-gap-aware segmentation for spacecraft parts with cross-domain generalization.  
+  [[GitHub](https://github.com/wuaodi/cross-domain_spacecraft_segmentation)]
 
-  <div class="project-card">
-    <h3>In-orbit Camera Intelligence</h3>
-    <p>
-      Engineering work on target detection, relative navigation, and intelligent exposure/focus control
-      for real space cameras and on-orbit validation.
-    </p>
-  </div>
-</div>
+- **In-orbit Camera Intelligence**: Engineering work on target detection, relative navigation, and intelligent exposure/focus control for real space cameras and on-orbit validation.
 
 <span class='anchor' id='education'></span>
 
