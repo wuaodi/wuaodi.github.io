@@ -4,9 +4,13 @@
 
 - **SpaceMind**: An MCP-based space agent architecture for perception, decision-making, and control in on-orbit servicing.  
   [[GitHub](https://github.com/wuaodi/SpaceMind)]
+  
+  <img class="project-teaser" src="/images/projects/spacemind-method.png" alt="SpaceMind method figure">
 
 - **SpaceSense-Bench / MM-SPACE**: A large-scale multimodal benchmark for spacecraft perception and pose estimation, built on UE5 and AirSim.  
   [[Repository](https://github.com/wuaodi/SpaceSense-Bench)] [[Paper](https://arxiv.org/abs/2603.09320)] [[Project Page](https://wuaodi.github.io/SpaceSense-Bench/)] [[Dataset](https://huggingface.co/datasets/Alvin16/SpaceSense-Bench/tree/main/raw)]
+  
+  <img class="project-teaser" src="/images/projects/spacesense-bench-teaser.png" alt="SpaceSense-Bench teaser figure">
 
 - **Cross-domain Spacecraft Segmentation**: Domain-gap-aware segmentation for spacecraft parts with cross-domain generalization.  
   [[GitHub](https://github.com/wuaodi/cross-domain_spacecraft_segmentation)]
