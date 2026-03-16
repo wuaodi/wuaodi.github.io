@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Aodi Wu (武奥迪)"
-description              : "Audi Wu is currently a Ph.D. student at the University of Chinese Academy of Sciences. "
+title                    : "Aodi Wu | Space AI"
+description              : "Ph.D. student working on space AI, multimodal perception, and embodied intelligence for on-orbit servicing."
 repository               : "wuaodi/wuaodi.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,9 +23,9 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Aodi Wu"
   avatar           : "images/wuaodi-512x512.png"
-  bio              : # "University of Chinese Academy of Sciences"
+  bio              : "Building reliable AI systems for on-orbit servicing and space robotics."
   location         : "Beijing, China"
-  employer         :
+  employer         : "Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=tBhUcJ8AAAAJ"
   email            : "wuaodi20@mails.ucas.ac.cn"

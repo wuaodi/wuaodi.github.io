@@ -1,15 +1,41 @@
-# 📝 Publications 
+<span class='anchor' id='publications'></span>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+# Selected Publications
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+<div class="pub-list">
+  <div class="pub-item">
+    <div class="pub-venue">IAA-SPAICE 2025</div>
+    <h3>SpaceMind: An MCP-based Agent Architecture Fusing Large and Small Models for On-orbit Servicing</h3>
+    <p>
+      A space agent framework that combines large vision-language models with specialized tools for
+      perception, reasoning, and control in on-orbit servicing tasks.
+    </p>
+    <p class="pub-links">
+      <a href="https://github.com/wuaodi/SpaceMind">Code</a>
+    </p>
+  </div>
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+  <div class="pub-item">
+    <div class="pub-venue">ICDIP 2025</div>
+    <h3>Cross-domain Spacecraft Component Segmentation Based on Edge Consistency Generative Neural Network</h3>
+    <p>
+      A cross-domain segmentation method for spacecraft components, targeting the gap between synthetic
+      and real-world space imagery.
+    </p>
+    <p class="pub-links">
+      <a href="https://github.com/wuaodi/cross-domain_spacecraft_segmentation">Code</a>
+    </p>
+  </div>
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+  <div class="pub-item">
+    <div class="pub-venue">ICoSR 2022</div>
+    <h3>Non-cooperative Spacecraft Relative Navigation Based on Monocular Camera in Space On-orbit Servicing</h3>
+    <p>
+      Research on monocular-vision-based relative navigation for non-cooperative spacecraft in on-orbit servicing scenarios.
+    </p>
+  </div>
 </div>
-</div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+## Patent
+
+- **Authorized Patent (2023)**: Intelligent in-orbit exposure and focus control method, system, and electronic equipment for space cameras.
