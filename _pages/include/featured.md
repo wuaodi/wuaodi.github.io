@@ -42,6 +42,7 @@
   <a href="https://github.com/wuaodi/SpaceSense-Bench">Code</a>
   <a href="https://wuaodi.github.io/SpaceSense-Bench/">Project Page</a>
   <a href="https://huggingface.co/datasets/Alvin16/SpaceSense-Bench/tree/main/raw">Dataset</a>
+  <a href="https://www.youtube.com/watch?v=_iqLCblyW5A">YouTube</a>
   <a href="https://www.bilibili.com/video/BV1Y9coziEMZ/">Bilibili</a>
 </div>
 
@@ -85,6 +86,7 @@
 Spacecraft pose estimation and part segmentation on synthetic and real satellite imagery.
 
 <div class="paper-links">
+  <a href="https://openaccess.thecvf.com/content/CVPR2024W/AI4Space/papers/Zuo_CroSpace6D_Leveraging_Geometric_and_Motion_Cues_for_High-Precision_Cross-Domain_6DoF_CVPRW_2024_paper.pdf">Paper</a>
   <a href="https://cvi2.uni.lu/spark2024/">Challenge Page</a>
 </div>
 
@@ -106,9 +108,9 @@ Spacecraft pose estimation and part segmentation on synthetic and real satellite
 End-to-end ownership of the visual perception stack, from algorithm research to flight-grade integration and on-orbit validation.
 
 <div class="paper-links">
-  <a href="https://github.com/wuaodi/cross-domain_spacecraft_segmentation">ICDIP 2025</a>
-  <a href="#publications">ICoSR 2022</a>
-  <a href="#publications">Patent (CN 2023102948012)</a>
+  <a href="https://github.com/wuaodi/cross-domain_spacecraft_segmentation">ICDIP 2025 Project</a>
+  <a href="https://ieeexplore.ieee.org/abstract/document/10137152">ICoSR 2022 Paper</a>
+  <span>Patent CN 2023102948012</span>
 </div>
 
 - Cross-domain spacecraft component segmentation with edge-consistency generative networks, robust to synthetic-to-real domain gap.

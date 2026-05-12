@@ -113,16 +113,6 @@
     border: 0;
   }
 
-  .video-card:first-child .video-sources {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  @media (max-width: 720px) {
-    .video-card:first-child .video-sources {
-      grid-template-columns: 1fr;
-    }
-  }
-
   .video-meta {
     padding: 0.8rem 1rem 1rem;
   }
@@ -139,7 +129,8 @@
   }
 
   .video-links a,
-  .paper-links a {
+  .paper-links a,
+  .paper-links span {
     display: inline-block;
     margin: 0.2rem 0.35rem 0.2rem 0;
     padding: 0.12rem 0.65rem;

@@ -18,8 +18,6 @@ redirect_from:
 
 {% include_relative include/featured.md %}
 
-{% include_relative include/pub.md %}
-
 {% include_relative include/honers.md %}
 
 {% include_relative include/others.md %}
@@ -35,8 +33,6 @@ redirect_from:
 {% include_relative include/demos-zh.md %}
 
 {% include_relative include/featured-zh.md %}
-
-{% include_relative include/pub-zh.md %}
 
 {% include_relative include/honers-zh.md %}
 

@@ -6,4 +6,4 @@ I am a Ph.D. student in Computer Application Technology at the **University of C
 
 My research builds reliable AI systems for **autonomous on-orbit servicing**, with a focus on **embodied vision-language agents**, **multimodal spacecraft perception**, and **simulation-to-real validation**. I am drawn to research that closes the loop from algorithm to engineering, and have shipped from lab algorithms to on-orbit satellites, large-scale multimodal benchmarks, and physical robot demonstrations.
 
-**Keywords:** Space AI · Space Robotics · Embodied Agent · Multimodal Perception · On-orbit Servicing
+**Keywords:** Space AI · Space Robotics · Embodied Agent · Multimodal Perception

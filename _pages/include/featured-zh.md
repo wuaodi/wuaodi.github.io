@@ -42,6 +42,7 @@
   <a href="https://github.com/wuaodi/SpaceSense-Bench">代码</a>
   <a href="https://wuaodi.github.io/SpaceSense-Bench/">项目主页</a>
   <a href="https://huggingface.co/datasets/Alvin16/SpaceSense-Bench/tree/main/raw">数据集</a>
+  <a href="https://www.youtube.com/watch?v=_iqLCblyW5A">YouTube</a>
   <a href="https://www.bilibili.com/video/BV1Y9coziEMZ/">Bilibili</a>
 </div>
 
@@ -85,6 +86,7 @@
 面向仿真与真实卫星图像的航天器位姿估计与部件分割。
 
 <div class="paper-links">
+  <a href="https://openaccess.thecvf.com/content/CVPR2024W/AI4Space/papers/Zuo_CroSpace6D_Leveraging_Geometric_and_Motion_Cues_for_High-Precision_Cross-Domain_6DoF_CVPRW_2024_paper.pdf">论文</a>
   <a href="https://cvi2.uni.lu/spark2024/">挑战赛主页</a>
 </div>
 
@@ -106,9 +108,9 @@
 完整负责视觉感知栈：从算法研发到工程化集成，最终随卫星发射完成在轨验证。
 
 <div class="paper-links">
-  <a href="https://github.com/wuaodi/cross-domain_spacecraft_segmentation">ICDIP 2025</a>
-  <a href="#publications">ICoSR 2022</a>
-  <a href="#publications">专利 CN 2023102948012</a>
+  <a href="https://github.com/wuaodi/cross-domain_spacecraft_segmentation">ICDIP 2025 项目</a>
+  <a href="https://ieeexplore.ieee.org/abstract/document/10137152">ICoSR 2022 论文</a>
+  <span>专利 CN 2023102948012</span>
 </div>
 
 - 基于边缘一致性生成网络的跨域航天器部件分割，缓解仿真到真实的域差。

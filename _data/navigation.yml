@@ -16,10 +16,6 @@ main:
     title_zh: "代表性工作"
     url: "/#featured"
 
-  - title: "Publications"
-    title_zh: "论文"
-    url: "/#publications"
-
   - title: "Honors"
     title_zh: "荣誉"
     url: "/#honors"
