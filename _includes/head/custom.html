@@ -220,9 +220,9 @@
 <script>
   (function () {
     try {
-      var saved = localStorage.getItem('site-lang');
+      var saved = localStorage.getItem('site-lang-v2');
       var lang = (saved === 'en' || saved === 'zh') ? saved
-        : ((navigator.language || navigator.userLanguage || '').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en');
+        : 'en';
       document.documentElement.setAttribute('data-lang', lang);
       document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
     } catch (e) {

@@ -35,7 +35,7 @@
   <div class="paper-box-text" markdown="1">
 #### [SpaceSense-Bench: A Large-Scale Multi-Modal Benchmark for Spacecraft Perception and Pose Estimation](https://arxiv.org/abs/2603.09320)
 
-**Aodi Wu**.
+**Aodi Wu**, Jianhong Zuo, Zeyuan Zhao, Xubo Luo, Ruisuo Wang, Xue Wan.
 
 <div class="paper-links">
   <a href="https://arxiv.org/abs/2603.09320">Paper</a>
@@ -61,7 +61,7 @@
   <div class="paper-box-text" markdown="1">
 #### [Enhancing Vision-Language Models for Autonomous Driving through Task-Specific Prompting and Spatial Reasoning](https://github.com/wuaodi/UCAS-CSU-phase2)
 
-**Aodi Wu**, Xubo Luo et al. *IROS 2025 RoboSense Challenge Technical Report.*
+**Aodi Wu**, Xubo Luo. *IROS 2025 RoboSense Challenge Technical Report.*
 
 <div class="paper-links">
   <a href="https://github.com/wuaodi/UCAS-CSU-phase2">Code</a>

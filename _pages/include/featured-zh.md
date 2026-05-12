@@ -35,7 +35,7 @@
   <div class="paper-box-text" markdown="1">
 #### [SpaceSense-Bench：面向航天器感知与位姿估计的大规模多模态基准](https://arxiv.org/abs/2603.09320)
 
-**武奥迪**.
+**武奥迪**, 左健宏, 赵泽渊, 雒勖博, 王睿索, 万雪.
 
 <div class="paper-links">
   <a href="https://arxiv.org/abs/2603.09320">论文</a>
@@ -61,7 +61,7 @@
   <div class="paper-box-text" markdown="1">
 #### [基于任务专属提示与空间推理的自动驾驶 VLM 增强方案](https://github.com/wuaodi/UCAS-CSU-phase2)
 
-**武奥迪**, 雒勖博等. *IROS 2025 RoboSense Challenge 技术报告.*
+**武奥迪**, 雒勖博. *IROS 2025 RoboSense Challenge 技术报告.*
 
 <div class="paper-links">
   <a href="https://github.com/wuaodi/UCAS-CSU-phase2">代码</a>

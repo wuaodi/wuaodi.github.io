@@ -7,8 +7,8 @@
 
 # Site Settings
 title                    : "Aodi Wu | Space AI"
-description              : "Ph.D. student working on space AI, multimodal perception, and embodied agent intelligence for on-orbit servicing."
-description_zh           : "中国科学院大学博士生，研究方向：空间智能、多模态感知与在轨服务中的具身智能。"
+description              : "Ph.D. student researching embodied agents, visual perception and navigation, and space robotics."
+description_zh           : "中国科学院大学博士生，研究方向：具身智能体、视觉感知与导航、空间机器人。"
 repository               : "wuaodi/wuaodi.github.io"
 google_scholar_stats_use_cdn : true
 
