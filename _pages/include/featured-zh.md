@@ -10,7 +10,7 @@
   <div class="paper-box-text" markdown="1">
 #### [SpaceMind：面向在轨服务的模块化自演化具身 VLM 智能体](https://arxiv.org/abs/2604.14399)
 
-**吴傲迪**, 韩昊东, 罗旭波, 王锐烁, 何山, 万雪.
+**武奥迪**, 韩浩东, 雒勖博, 王睿索, 何山, 万雪.
 
 <div class="paper-links">
   <a href="https://arxiv.org/abs/2604.14399">论文</a>
@@ -35,7 +35,7 @@
   <div class="paper-box-text" markdown="1">
 #### [SpaceSense-Bench：面向航天器感知与位姿估计的大规模多模态基准](https://arxiv.org/abs/2603.09320)
 
-**吴傲迪** 等.
+**武奥迪**.
 
 <div class="paper-links">
   <a href="https://arxiv.org/abs/2603.09320">论文</a>
@@ -61,7 +61,7 @@
   <div class="paper-box-text" markdown="1">
 #### [基于任务专属提示与空间推理的自动驾驶 VLM 增强方案](https://github.com/wuaodi/UCAS-CSU-phase2)
 
-**吴傲迪**, 罗旭波. *IROS 2025 RoboSense Challenge 技术报告.*
+**武奥迪**, 雒勖博等. *IROS 2025 RoboSense Challenge 技术报告.*
 
 <div class="paper-links">
   <a href="https://github.com/wuaodi/UCAS-CSU-phase2">代码</a>
@@ -90,9 +90,9 @@
   <a href="https://cvi2.uni.lu/spark2024/">挑战赛主页</a>
 </div>
 
-- 位姿估计赛道：所有参赛队伍中获得第 1 名（队员身份）。
-- 部件分割赛道：获得第 4 名（队长身份）。
-- 在 SPARK 2024 数据集上设计了检测 + 单目深度线索 + 朝向回归的多阶段方案。
+- 位姿估计赛道：获得第 1 名（**队员**）。
+- 部件分割赛道：获得第 4 名（**队长**）。
+- 在 SPARK 2024 数据集上集成多分割算法与深度估计，融合绝对定位与相对定位。
 
 </div>
 </div>
@@ -103,9 +103,9 @@
     <img src="images/paper/Davinci.png" alt="达芬奇卫星工作">
   </div>
   <div class="paper-box-text" markdown="1">
-#### 达芬奇空间在轨服务卫星——从算法到在轨的视觉感知栈
+#### 达芬奇空间在轨服务卫星——相机控制、视觉感知与单目导航
 
-完整负责视觉感知栈：从算法研发到工程化集成，最终随卫星发射完成在轨验证。
+负责相机曝光对焦控制、视觉感知与单目导航，从算法研发到软硬件集成与发射保障。
 
 <div class="paper-links">
   <a href="https://github.com/wuaodi/cross-domain_spacecraft_segmentation">ICDIP 2025 项目</a>

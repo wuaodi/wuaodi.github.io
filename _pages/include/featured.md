@@ -35,7 +35,7 @@
   <div class="paper-box-text" markdown="1">
 #### [SpaceSense-Bench: A Large-Scale Multi-Modal Benchmark for Spacecraft Perception and Pose Estimation](https://arxiv.org/abs/2603.09320)
 
-**Aodi Wu** et al.
+**Aodi Wu**.
 
 <div class="paper-links">
   <a href="https://arxiv.org/abs/2603.09320">Paper</a>
@@ -61,7 +61,7 @@
   <div class="paper-box-text" markdown="1">
 #### [Enhancing Vision-Language Models for Autonomous Driving through Task-Specific Prompting and Spatial Reasoning](https://github.com/wuaodi/UCAS-CSU-phase2)
 
-**Aodi Wu**, Xubo Luo. *IROS 2025 RoboSense Challenge Technical Report.*
+**Aodi Wu**, Xubo Luo et al. *IROS 2025 RoboSense Challenge Technical Report.*
 
 <div class="paper-links">
   <a href="https://github.com/wuaodi/UCAS-CSU-phase2">Code</a>
@@ -90,9 +90,9 @@ Spacecraft pose estimation and part segmentation on synthetic and real satellite
   <a href="https://cvi2.uni.lu/spark2024/">Challenge Page</a>
 </div>
 
-- Pose estimation track — 1st place out of all teams (team member).
-- Part segmentation track — 4th place (team leader).
-- Designed a multi-stage pipeline combining detection, monocular depth cues, and orientation regression on the SPARK 2024 dataset.
+- Pose estimation track — 1st place (**team member**).
+- Part segmentation track — 4th place (**team leader**).
+- Integrated multiple segmentation algorithms with depth estimation, and fused absolute and relative localization on the SPARK 2024 dataset.
 
 </div>
 </div>
@@ -103,9 +103,9 @@ Spacecraft pose estimation and part segmentation on synthetic and real satellite
     <img src="images/paper/Davinci.png" alt="DaVinci satellite work">
   </div>
   <div class="paper-box-text" markdown="1">
-#### DaVinci On-orbit Servicing Satellite — Perception Stack from Algorithm to Launch
+#### DaVinci On-orbit Servicing Satellite — Camera Control, Visual Perception, and Monocular Navigation
 
-End-to-end ownership of the visual perception stack, from algorithm research to flight-grade integration and on-orbit validation.
+Led camera exposure/focus control, visual perception, and monocular navigation, from algorithm research to software-hardware integration and launch support.
 
 <div class="paper-links">
   <a href="https://github.com/wuaodi/cross-domain_spacecraft_segmentation">ICDIP 2025 Project</a>
