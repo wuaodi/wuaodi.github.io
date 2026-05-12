@@ -1,5 +1,12 @@
 # Context
 
+## 原始资料
+原始资料文件夹放着个人相关的各种资料
+
+## 查看效果
+如果想要查看编译后的效果，可以先推送到github，过几分钟等在线编译完成后，访问`https://wuaodi.github.io`即可。
+
+
 ## Project Summary
 基于 Jekyll 的个人学术主页（[wuaodi.github.io](https://wuaodi.github.io)），由 `acad-homepage.github.io` 模板改造而来。主人公为武奥迪（Aodi Wu），中国科学院大学计算机应用技术博士生，研究方向是空间 AI、在轨服务、多模态航天器感知与具身智能。当前主页用英文写就，主体内容由若干 markdown 片段拼装，正在新增"一键中英切换"能力。
 
@@ -54,3 +61,17 @@
 - 中英切换实现思路：每段内容准备 EN/ZH 两份 include；在 `about.md` 用 `<div data-lang="en">` / `<div data-lang="zh">` 包裹；侧边栏与导航通过 `_config.yml`、`navigation.yml` 增加 `*_zh` 字段，模板里输出 `data-i18n-en` / `data-i18n-zh` 两段文本；JS 监听切换按钮，写入 `localStorage` 的 `site-lang`，按 `<html lang>` 切换可见区块。
 - 切换按钮加在 `_includes/masthead.html`，自定义样式与逻辑放在 `_includes/head/custom.html`（CSS）和 `_includes/scripts.html`（JS）。
 - 修改 `_config.yml` 后 `jekyll liveserve` 不会热重载，需要 Ctrl+C 重启。
+
+## 待你补充的素材（占位符）
+- `_pages/include/demos.md` 和 `demos-zh.md` 里 `YOUTUBE_ID_SPACEMIND` / `YOUTUBE_ID_SPACESENSE` 两处占位需要替换为真实 YouTube 视频 ID（不是完整 URL，只要 `https://www.youtube.com/watch?v=XXXXXXX` 里的 `XXXXXXX` 部分）。两个文件里每个 ID 各出现两次（src 中 + loop 用的 playlist 参数），grep+替换即可。
+- `_pages/include/featured.md` 和 `featured-zh.md` 中 CVPR SPARK 卡片暂用 `images/500x300.png` 占位，可以把比赛 leaderboard 截图或方法图放到 `images/paper/spark-cvpr2024.png` 后替换。
+
+## 主页结构（2026.05 更新后）
+1. About（双语精炼简介 + 关键词）
+2. News（最近一年动态）
+3. Featured Demos（并排 2 个 YouTube iframe + Bilibili 兜底链接）
+4. Selected Work（5 张 paper-box 卡：SpaceMind / SpaceSense-Bench / 达芬奇卫星硕士整合卡 / IROS RoboSense / CVPR SPARK）
+5. Publications（含专利的紧凑列表）
+6. Honors and Awards
+7. Education / Research Interests / Contact
+

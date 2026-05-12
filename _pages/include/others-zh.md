@@ -1,22 +1,3 @@
-<span class='anchor' id='projects'></span>
-
-# 代表性项目
-
-- **SpaceMind**：面向在轨服务的 MCP 空间智能体架构，统一感知、决策与控制。  
-  [[GitHub](https://github.com/wuaodi/SpaceMind)]
-  
-  <img class="project-teaser" src="/images/projects/spacemind-method.png" alt="SpaceMind 方法示意图">
-
-- **SpaceSense-Bench / MM-SPACE**：基于 UE5 与 AirSim 构建的大规模多模态航天器感知与位姿估计基准。  
-  [[仓库](https://github.com/wuaodi/SpaceSense-Bench)] [[论文](https://arxiv.org/abs/2603.09320)] [[项目主页](https://wuaodi.github.io/SpaceSense-Bench/)] [[数据集](https://huggingface.co/datasets/Alvin16/SpaceSense-Bench/tree/main/raw)]
-  
-  <img class="project-teaser" src="/images/projects/spacesense-bench-teaser.png" alt="SpaceSense-Bench 示意图">
-
-- **跨域航天器部件分割**：面向跨域泛化的航天器部件分割方法。  
-  [[GitHub](https://github.com/wuaodi/cross-domain_spacecraft_segmentation)]
-
-- **在轨相机智能化**：面向真实空间相机的目标检测、相对导航与智能曝光对焦控制工程实践，已完成在轨验证。
-
 <span class='anchor' id='education'></span>
 
 # 教育经历
@@ -27,9 +8,9 @@
 
 ## 研究兴趣
 
-- 空间智能与在轨服务
-- 多模态航天器感知
-- 工具调用智能体与具身智能
+- 空间智能与自主在轨服务
+- 具身视觉语言智能体与工具调用推理
+- 多模态航天器感知（RGB / 深度 / LiDAR）
 - 相对导航与自主控制
 - 仿真到真实的系统验证
 

@@ -2,8 +2,8 @@
 
 # About
 
-I am a Ph.D. student in Computer Application Technology at the **University of Chinese Academy of Sciences**, working at the **Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences**.
+I am a Ph.D. student in Computer Application Technology at the **University of Chinese Academy of Sciences**, advised by Prof. Xue Wan at the **Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences**.
 
-My research focuses on **space AI**, especially for **on-orbit servicing**, **multimodal spacecraft perception**, and **embodied intelligence**. I am interested in building systems that connect perception, reasoning, control, simulation, and real-world validation.
+My research builds reliable AI systems for **autonomous on-orbit servicing**, with a focus on **embodied vision-language agents**, **multimodal spacecraft perception**, and **simulation-to-real validation**. I am drawn to research that closes the loop from algorithm to engineering, and have shipped from lab algorithms to on-orbit satellites, large-scale multimodal benchmarks, and physical robot demonstrations.
 
-More broadly, I care about research that moves from isolated algorithms to complete engineering systems. My recent work includes MCP-based space agents, large-scale multimodal benchmarks for spacecraft perception, and cross-domain methods for space imagery understanding.
+**Keywords:** Space AI · Embodied Agent · Multimodal Perception · On-orbit Servicing

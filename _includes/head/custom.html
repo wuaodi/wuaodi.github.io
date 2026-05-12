@@ -55,6 +55,115 @@
     border-radius: 10px;
   }
 
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin: 1rem 0 2rem;
+  }
+
+  @media (max-width: 720px) {
+    .featured-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .video-card {
+    display: flex;
+    flex-direction: column;
+    background: #fafbfd;
+    border: 1px solid #e3e8ef;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .video-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+  }
+
+  .video-wrap iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .video-meta {
+    padding: 0.8rem 1rem 1rem;
+  }
+
+  .video-meta h4 {
+    margin: 0 0 0.35rem;
+    font-size: 1.05rem;
+  }
+
+  .video-meta p {
+    margin: 0 0 0.4rem;
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .video-links a,
+  .paper-links a {
+    display: inline-block;
+    margin: 0.2rem 0.35rem 0.2rem 0;
+    padding: 0.12rem 0.65rem;
+    font-size: 0.82em;
+    color: #00369f;
+    background: #eef2fb;
+    border: 1px solid #d6dce5;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .video-links a:hover,
+  .paper-links a:hover {
+    background: #00369f;
+    color: #fff;
+    border-color: #00369f;
+  }
+
+  .paper-box {
+    position: relative;
+    padding: 1.5rem 0 1.75rem !important;
+  }
+
+  .paper-box:last-of-type {
+    border-bottom: 0 !important;
+  }
+
+  .paper-box .badge {
+    top: 0.5em;
+    left: 0.5em;
+    margin: 0 !important;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  .paper-box-image {
+    position: relative;
+  }
+
+  .paper-box-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .paper-box-text h3,
+  .paper-box-text > p:first-child {
+    margin-top: 0;
+  }
+
+  .paper-box-text ul {
+    margin-top: 0.5rem;
+  }
+
   html[data-lang="en"] [data-lang="zh"],
   html[data-lang="zh"] [data-lang="en"] {
     display: none !important;

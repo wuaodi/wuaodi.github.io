@@ -1,22 +1,3 @@
-<span class='anchor' id='projects'></span>
-
-# Selected Projects
-
-- **SpaceMind**: An MCP-based space agent architecture for perception, decision-making, and control in on-orbit servicing.  
-  [[GitHub](https://github.com/wuaodi/SpaceMind)]
-  
-  <img class="project-teaser" src="/images/projects/spacemind-method.png" alt="SpaceMind method figure">
-
-- **SpaceSense-Bench / MM-SPACE**: A large-scale multimodal benchmark for spacecraft perception and pose estimation, built on UE5 and AirSim.  
-  [[Repository](https://github.com/wuaodi/SpaceSense-Bench)] [[Paper](https://arxiv.org/abs/2603.09320)] [[Project Page](https://wuaodi.github.io/SpaceSense-Bench/)] [[Dataset](https://huggingface.co/datasets/Alvin16/SpaceSense-Bench/tree/main/raw)]
-  
-  <img class="project-teaser" src="/images/projects/spacesense-bench-teaser.png" alt="SpaceSense-Bench teaser figure">
-
-- **Cross-domain Spacecraft Segmentation**: Domain-gap-aware segmentation for spacecraft parts with cross-domain generalization.  
-  [[GitHub](https://github.com/wuaodi/cross-domain_spacecraft_segmentation)]
-
-- **In-orbit Camera Intelligence**: Engineering work on target detection, relative navigation, and intelligent exposure/focus control for real space cameras and on-orbit validation.
-
 <span class='anchor' id='education'></span>
 
 # Education
@@ -27,9 +8,9 @@
 
 ## Research Interests
 
-- Space AI and on-orbit servicing
-- Multimodal spacecraft perception
-- Tool-use agents and embodied intelligence
+- Space AI and autonomous on-orbit servicing
+- Embodied vision-language agents and tool-use reasoning
+- Multimodal spacecraft perception (RGB / depth / LiDAR)
 - Relative navigation and autonomous control
 - Simulation-to-real system validation
 

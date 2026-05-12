@@ -14,6 +14,10 @@ redirect_from:
 
 {% include_relative include/news.md %}
 
+{% include_relative include/demos.md %}
+
+{% include_relative include/featured.md %}
+
 {% include_relative include/pub.md %}
 
 {% include_relative include/honers.md %}
@@ -27,6 +31,10 @@ redirect_from:
 {% include_relative include/intro-zh.md %}
 
 {% include_relative include/news-zh.md %}
+
+{% include_relative include/demos-zh.md %}
+
+{% include_relative include/featured-zh.md %}
 
 {% include_relative include/pub-zh.md %}
 
