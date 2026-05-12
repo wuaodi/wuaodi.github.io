@@ -1,4 +1,87 @@
 <script src="assets/js/main.min.js"></script>
 
+<script>
+  (function () {
+    var STORAGE_KEY = 'site-lang';
+
+    function getInitialLang() {
+      var current = document.documentElement.getAttribute('data-lang');
+      if (current === 'en' || current === 'zh') return current;
+      try {
+        var saved = localStorage.getItem(STORAGE_KEY);
+        if (saved === 'en' || saved === 'zh') return saved;
+      } catch (e) {}
+      var browser = (navigator.language || navigator.userLanguage || '').toLowerCase();
+      return browser.indexOf('zh') === 0 ? 'zh' : 'en';
+    }
+
+    function swapIds(active) {
+      var sections = document.querySelectorAll('[data-lang]');
+      for (var i = 0; i < sections.length; i++) {
+        var section = sections[i];
+        var isActive = section.getAttribute('data-lang') === active;
+        var nodes = section.querySelectorAll('[id], [data-orig-id]');
+        for (var j = 0; j < nodes.length; j++) {
+          var el = nodes[j];
+          if (isActive) {
+            var orig = el.getAttribute('data-orig-id');
+            if (orig && !el.id) {
+              el.id = orig;
+              el.removeAttribute('data-orig-id');
+            }
+          } else if (el.id) {
+            el.setAttribute('data-orig-id', el.id);
+            el.removeAttribute('id');
+          }
+        }
+      }
+    }
+
+    function applyLang(lang) {
+      document.documentElement.setAttribute('data-lang', lang);
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+
+      var labels = document.querySelectorAll('[data-i18n-en]');
+      for (var i = 0; i < labels.length; i++) {
+        var attr = lang === 'zh' ? 'data-i18n-zh' : 'data-i18n-en';
+        var text = labels[i].getAttribute(attr);
+        if (text !== null) labels[i].textContent = text;
+      }
+
+      swapIds(lang);
+
+      var toggles = document.querySelectorAll('.lang-toggle');
+      for (var k = 0; k < toggles.length; k++) {
+        toggles[k].setAttribute('data-current', lang);
+        toggles[k].textContent = lang === 'zh' ? 'EN' : '中文';
+      }
+
+      try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+    }
+
+    function bind() {
+      var toggles = document.querySelectorAll('.lang-toggle');
+      for (var i = 0; i < toggles.length; i++) {
+        toggles[i].addEventListener('click', function (e) {
+          e.preventDefault();
+          var current = document.documentElement.getAttribute('data-lang') || 'en';
+          applyLang(current === 'zh' ? 'en' : 'zh');
+        });
+      }
+    }
+
+    function init() {
+      applyLang(getInitialLang());
+      bind();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>
+
 {% include analytics.html %}
 {% include fetch_google_scholar_stats.html %}

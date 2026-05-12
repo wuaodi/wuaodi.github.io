@@ -54,6 +54,50 @@
     border: 1px solid #d6dce5;
     border-radius: 10px;
   }
+
+  html[data-lang="en"] [data-lang="zh"],
+  html[data-lang="zh"] [data-lang="en"] {
+    display: none !important;
+  }
+
+  .masthead__menu-item--lang .lang-toggle {
+    display: inline-block;
+    margin: 0 0.25rem;
+    padding: 0.15rem 0.7rem !important;
+    border: 1px solid #c8cfdb;
+    border-radius: 999px;
+    font-size: 0.8em;
+    line-height: 1.4;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .masthead__menu-item--lang .lang-toggle:hover,
+  .masthead__menu-item--lang .lang-toggle:focus {
+    background-color: #00369f;
+    color: #fff !important;
+    border-color: #00369f;
+    outline: none;
+  }
+
+  .masthead__menu-item--lang .lang-toggle:before {
+    display: none !important;
+  }
 </style>
+
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('site-lang');
+      var lang = (saved === 'en' || saved === 'zh') ? saved
+        : ((navigator.language || navigator.userLanguage || '').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en');
+      document.documentElement.setAttribute('data-lang', lang);
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+    } catch (e) {
+      document.documentElement.setAttribute('data-lang', 'en');
+    }
+  })();
+</script>
 
 <!-- end custom head snippets -->
