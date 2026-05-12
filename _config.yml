@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Aodi Wu | Space AI"
-description              : "Ph.D. student working on space AI, multimodal perception, and embodied intelligence for on-orbit servicing."
+description              : "Ph.D. student working on space AI, multimodal perception, and embodied agent intelligence for on-orbit servicing."
 description_zh           : "中国科学院大学博士生，研究方向：空间智能、多模态感知与在轨服务中的具身智能。"
 repository               : "wuaodi/wuaodi.github.io"
 google_scholar_stats_use_cdn : true
@@ -29,7 +29,7 @@ author:
   bio_zh           : "致力于面向在轨服务与空间机器人的可靠 AI 系统研究。"
   location         : "Beijing, China"
   location_zh      : "中国 · 北京"
-  employer         : "UCAS / CAS Space Utilization Center"
+  employer         : "Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences"
   employer_zh      : "中国科学院大学 / 中科院空间应用工程与技术中心"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=tBhUcJ8AAAAJ"

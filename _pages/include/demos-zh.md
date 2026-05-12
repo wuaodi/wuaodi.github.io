@@ -4,8 +4,19 @@
 
 <div class="featured-grid">
   <div class="video-card">
-    <div class="video-wrap">
-      <iframe src="https://www.youtube.com/embed/YOUTUBE_ID_SPACEMIND?autoplay=1&mute=1&loop=1&playlist=YOUTUBE_ID_SPACEMIND&modestbranding=1&playsinline=1&rel=0" title="SpaceMind demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    <div class="video-sources">
+      <div class="video-source">
+        <div class="video-source-label">YouTube</div>
+        <div class="video-wrap">
+          <iframe class="fitvidsignore" src="https://www.youtube.com/embed/X8vZvZIe82U?autoplay=0&mute=0&modestbranding=1&playsinline=1&rel=0" title="SpaceMind demo on YouTube" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="video-source">
+        <div class="video-source-label">Bilibili</div>
+        <div class="video-wrap">
+          <iframe class="fitvidsignore" src="https://player.bilibili.com/player.html?bvid=BV1VfdzBrEpc&page=1&autoplay=0" title="SpaceMind demo on Bilibili" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
     </div>
     <div class="video-meta">
       <h4>SpaceMind</h4>
@@ -14,14 +25,20 @@
         <a href="https://arxiv.org/abs/2604.14399">论文</a>
         <a href="https://github.com/wuaodi/SpaceMind">代码</a>
         <a href="https://wuaodi.github.io/SpaceMind/">项目主页</a>
+        <a href="https://www.youtube.com/watch?v=X8vZvZIe82U">YouTube</a>
         <a href="https://www.bilibili.com/video/BV1VfdzBrEpc/">Bilibili</a>
       </p>
     </div>
   </div>
 
   <div class="video-card">
-    <div class="video-wrap">
-      <iframe src="https://www.youtube.com/embed/YOUTUBE_ID_SPACESENSE?autoplay=1&mute=1&loop=1&playlist=YOUTUBE_ID_SPACESENSE&modestbranding=1&playsinline=1&rel=0" title="SpaceSense-Bench demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    <div class="video-sources">
+      <div class="video-source">
+        <div class="video-source-label">Bilibili</div>
+        <div class="video-wrap">
+          <iframe class="fitvidsignore" src="https://player.bilibili.com/player.html?bvid=BV1Y9coziEMZ&page=1&autoplay=0" title="SpaceSense-Bench demo on Bilibili" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
     </div>
     <div class="video-meta">
       <h4>SpaceSense-Bench</h4>
