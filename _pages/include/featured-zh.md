@@ -59,7 +59,7 @@
     <img src="images/paper/robosense-method.png" alt="RoboSense 方法">
   </div>
   <div class="paper-box-text" markdown="1">
-#### [基于任务专属提示与空间推理的自动驾驶 VLM 增强方案](https://github.com/wuaodi/UCAS-CSU-phase2)
+#### [基于动态路由与空间推理的自动驾驶 VLM 增强方案](https://github.com/wuaodi/UCAS-CSU-phase2)
 
 **武奥迪**, 雒勖博. *IROS 2025 RoboSense Challenge 技术报告.*
 
@@ -68,7 +68,7 @@
   <a href="https://github.com/wuaodi/UCAS-CSU-phase2">报告</a>
 </div>
 
-- Mixture-of-Prompts 路由：把每类问题分发到对应专家提示，消除任务间提示干扰。
+- 动态路由模块：把每类问题分发到对应专家提示，消除任务间提示干扰。
 - 显式多视图坐标系建模 + Chain-of-Thought / Tree-of-Thought 推理，修正后视相机与左右方位混淆问题。
 - 基于 Qwen2.5-VL-72B，Phase-1 干净数据 70.87%，Phase-2 受扰数据 72.85%，最终总成绩亚军，并获创新解决方案奖。
 

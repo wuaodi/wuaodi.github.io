@@ -59,7 +59,7 @@
     <img src="images/paper/robosense-method.png" alt="RoboSense method">
   </div>
   <div class="paper-box-text" markdown="1">
-#### [Enhancing Vision-Language Models for Autonomous Driving through Task-Specific Prompting and Spatial Reasoning](https://github.com/wuaodi/UCAS-CSU-phase2)
+#### [Enhancing Vision-Language Models for Autonomous Driving through Dynamic Routing and Spatial Reasoning](https://github.com/wuaodi/UCAS-CSU-phase2)
 
 **Aodi Wu**, Xubo Luo. *IROS 2025 RoboSense Challenge Technical Report.*
 
@@ -68,7 +68,7 @@
   <a href="https://github.com/wuaodi/UCAS-CSU-phase2">Report</a>
 </div>
 
-- Mixture-of-Prompts router that dispatches each question to a task-specific expert prompt, eliminating cross-task interference.
+- Dynamic routing module that dispatches each question to a task-specific expert prompt, eliminating cross-task interference.
 - Explicit multi-view coordinate grounding plus Chain-of-Thought / Tree-of-Thought reasoning to fix BACK-camera and left-right confusion.
 - 70.87% on Phase-1 clean data and 72.85% on Phase-2 corrupted data with Qwen2.5-VL-72B; 2nd place overall and Innovation Solution Award.
 

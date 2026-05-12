@@ -19,7 +19,7 @@
   *ICDIP 2025.*  
   [[Code](https://github.com/wuaodi/cross-domain_spacecraft_segmentation)]
 
-- **Enhancing Vision-Language Models for Autonomous Driving through Task-Specific Prompting and Spatial Reasoning**.  
+- **Enhancing Vision-Language Models for Autonomous Driving through Dynamic Routing and Spatial Reasoning**.
   **Aodi Wu**, Xubo Luo.  
   *IROS 2025 RoboSense Challenge Technical Report (2nd Place + Innovation Solution Award).*  
   [[Code](https://github.com/wuaodi/UCAS-CSU-phase2)]

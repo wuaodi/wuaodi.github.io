@@ -19,7 +19,7 @@
   *ICDIP 2025。*  
   [[代码](https://github.com/wuaodi/cross-domain_spacecraft_segmentation)]
 
-- **基于任务专属提示与空间推理的自动驾驶 VLM 增强方案**。  
+- **基于动态路由与空间推理的自动驾驶 VLM 增强方案**。
   **吴傲迪**, 罗旭波。  
   *IROS 2025 RoboSense Challenge 技术报告（亚军 + 创新解决方案奖）。*  
   [[代码](https://github.com/wuaodi/UCAS-CSU-phase2)]

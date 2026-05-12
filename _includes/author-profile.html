@@ -12,21 +12,11 @@
     <h3 class="author__name"
         data-i18n-en="{{ author.name }}"
         data-i18n-zh="{{ author.name_zh | default: author.name }}">{{ author.name }}</h3>
-    {% if author.bio %}
-      <p class="author__bio"
-         data-i18n-en="{{ author.bio | escape }}"
-         data-i18n-zh="{{ author.bio_zh | default: author.bio | escape }}">{{ author.bio }}</p>
-    {% endif %}
   </div>
 
   <div class="author__urls-wrapper">
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
-      {% if site.description %}
-        <li><div style="white-space: normal; margin-bottom: 1em;"
-                 data-i18n-en="{{ site.description | escape }}"
-                 data-i18n-zh="{{ site.description_zh | default: site.description | escape }}">{{ site.description }}</div></li>
-      {% endif %}
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span
             data-i18n-en="{{ author.location | escape }}"

@@ -4,6 +4,10 @@ main:
     title_zh: "关于"
     url: "/#about"
 
+  - title: "Education"
+    title_zh: "教育"
+    url: "/#education"
+
   - title: "News"
     title_zh: "动态"
     url: "/#news"
@@ -19,7 +23,3 @@ main:
   - title: "Honors"
     title_zh: "荣誉"
     url: "/#honors"
-
-  - title: "Education"
-    title_zh: "教育"
-    url: "/#education"

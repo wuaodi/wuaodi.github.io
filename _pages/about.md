@@ -12,6 +12,8 @@ redirect_from:
 
 {% include_relative include/intro.md %}
 
+{% include_relative include/education.md %}
+
 {% include_relative include/news.md %}
 
 {% include_relative include/demos.md %}
@@ -27,6 +29,8 @@ redirect_from:
 <div data-lang="zh" class="lang-section" markdown="1">
 
 {% include_relative include/intro-zh.md %}
+
+{% include_relative include/education-zh.md %}
 
 {% include_relative include/news-zh.md %}
 
