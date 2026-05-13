@@ -5,17 +5,18 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
-            <a href="#about-me" data-i18n-en="Homepage" data-i18n-zh="主页">Homepage</a>
+            <a href="#about-me" target="_self" data-i18n-en="Homepage" data-i18n-zh="主页">Homepage</a>
           </li>
           {% for link in site.data.navigation.main %}
             <li class="masthead__menu-item">
               <a href="{{ domain }}{{ link.url }}"
+                 target="_self"
                  data-i18n-en="{{ link.title }}"
                  data-i18n-zh="{{ link.title_zh | default: link.title }}">{{ link.title }}</a>
             </li>
           {% endfor %}
           <li class="masthead__menu-item masthead__menu-item--lang">
-            <a href="#" class="lang-toggle" role="button" aria-label="Switch language" title="Switch language / 切换语言">中文</a>
+            <a href="#" class="lang-toggle" target="_self" role="button" aria-label="Switch language" title="Switch language / 切换语言">中文</a>
           </li>
         </ul>
         <ul class="hidden-links hidden"></ul>

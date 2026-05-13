@@ -23,9 +23,16 @@
             data-i18n-zh="{{ author.location_zh | default: author.location | escape }}">{{ author.location }}</span></li>
       {% endif %}
       {% if author.employer %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span
-            data-i18n-en="{{ author.employer | escape }}"
-            data-i18n-zh="{{ author.employer_zh | default: author.employer | escape }}">{{ author.employer }}</span></li>
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span class="author-employer">
+          <span
+              data-i18n-en="{{ author.employer | escape }}"
+              data-i18n-zh="{{ author.employer_zh | default: author.employer | escape }}">{{ author.employer }}</span>
+          {% if author.employer_line2 or author.employer_line2_zh %}
+            <span class="author-employer__line2"
+                data-i18n-en="{{ author.employer_line2 | default: '' | escape }}"
+                data-i18n-zh="{{ author.employer_line2_zh | default: author.employer_line2 | escape }}">{{ author.employer_line2 }}</span>
+          {% endif %}
+        </span></li>
       {% endif %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Website</a></li>

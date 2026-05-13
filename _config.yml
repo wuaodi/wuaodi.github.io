@@ -29,8 +29,10 @@ author:
   bio_zh           : "致力于面向在轨服务与空间机器人的可靠 AI 系统研究。"
   location         : "Beijing, China"
   location_zh      : "中国 · 北京"
-  employer         : "Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences"
-  employer_zh      : "中国科学院大学 / 中科院空间应用工程与技术中心"
+  employer         : "University of Chinese Academy of Sciences"
+  employer_line2   : "Technology and Engineering Center for Space Utilization"
+  employer_zh      : "中国科学院大学"
+  employer_line2_zh: "空间应用工程与技术中心"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=tBhUcJ8AAAAJ"
   email            : "wuaodi20@mails.ucas.ac.cn"
