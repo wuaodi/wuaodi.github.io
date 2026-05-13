@@ -12,13 +12,13 @@ author_profile: true
 # CV
 
 <div class="cv-actions">
-  <a class="btn btn--primary" href="/files/cv.pdf" target="_blank" rel="noopener">Open PDF</a>
-  <a class="btn" href="/files/cv.pdf" download>Download PDF</a>
-  <a class="btn" href="/files/cv.html" target="_blank" rel="noopener">Open HTML</a>
+  <a class="btn btn--primary" href="{{ '/files/cv.pdf' | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
+  <a class="btn" href="{{ '/files/cv.pdf' | relative_url }}" download>Download PDF</a>
+  <a class="btn" href="{{ '/files/cv.html' | relative_url }}" target="_blank" rel="noopener">Open HTML</a>
 </div>
 
 <div class="cv-preview-wrap">
-  <iframe class="cv-preview" src="/files/cv.html" title="Aodi Wu CV preview" loading="lazy"></iframe>
+  <iframe class="cv-preview" src="{{ '/files/cv.html' | relative_url }}" title="Aodi Wu CV preview" loading="lazy"></iframe>
 </div>
 
 </div>
@@ -30,13 +30,13 @@ author_profile: true
 # 简历
 
 <div class="cv-actions">
-  <a class="btn btn--primary" href="/files/cv.pdf" target="_blank" rel="noopener">打开 PDF</a>
-  <a class="btn" href="/files/cv.pdf" download>下载 PDF</a>
-  <a class="btn" href="/files/cv.html" target="_blank" rel="noopener">打开 HTML</a>
+  <a class="btn btn--primary" href="{{ '/files/cv.pdf' | relative_url }}" target="_blank" rel="noopener">打开 PDF</a>
+  <a class="btn" href="{{ '/files/cv.pdf' | relative_url }}" download>下载 PDF</a>
+  <a class="btn" href="{{ '/files/cv.html' | relative_url }}" target="_blank" rel="noopener">打开 HTML</a>
 </div>
 
 <div class="cv-preview-wrap">
-  <iframe class="cv-preview" src="/files/cv.html" title="武奥迪简历在线预览" loading="lazy"></iframe>
+  <iframe class="cv-preview" src="{{ '/files/cv.html' | relative_url }}" title="武奥迪简历在线预览" loading="lazy"></iframe>
 </div>
 
 </div>
