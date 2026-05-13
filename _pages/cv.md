@@ -12,9 +12,7 @@ author_profile: true
 # CV
 
 <div class="cv-actions">
-  <a class="btn btn--primary" href="{{ '/files/cv.pdf' | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
-  <a class="btn" href="{{ '/files/cv.pdf' | relative_url }}" download>Download PDF</a>
-  <a class="btn" href="{{ '/files/cv.html' | relative_url }}" target="_blank" rel="noopener">Open HTML</a>
+  <a class="btn btn--primary" href="{{ '/files/cv.pdf' | relative_url }}" download="武奥迪简历.pdf" target="_self">Download PDF</a>
 </div>
 
 <div class="cv-preview-wrap">
@@ -30,9 +28,7 @@ author_profile: true
 # 简历
 
 <div class="cv-actions">
-  <a class="btn btn--primary" href="{{ '/files/cv.pdf' | relative_url }}" target="_blank" rel="noopener">打开 PDF</a>
-  <a class="btn" href="{{ '/files/cv.pdf' | relative_url }}" download>下载 PDF</a>
-  <a class="btn" href="{{ '/files/cv.html' | relative_url }}" target="_blank" rel="noopener">打开 HTML</a>
+  <a class="btn btn--primary" href="{{ '/files/cv.pdf' | relative_url }}" download="武奥迪简历.pdf" target="_self">下载 PDF</a>
 </div>
 
 <div class="cv-preview-wrap">
