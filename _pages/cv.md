@@ -12,11 +12,11 @@ author_profile: true
 # CV
 
 <div class="cv-actions">
-  <a class="btn btn--primary" href="{{ '/files/cv.pdf' | relative_url }}" download="武奥迪简历.pdf" target="_self">Download PDF</a>
+  <a class="btn btn--primary" href="{{ '/CV/cv.pdf' | relative_url }}" download="武奥迪简历.pdf" target="_self">Download PDF</a>
 </div>
 
 <div class="cv-preview-wrap">
-  <iframe class="cv-preview" src="{{ '/files/cv.html' | relative_url }}" title="Aodi Wu CV preview" loading="lazy"></iframe>
+  <iframe class="cv-preview" src="{{ '/CV/cv.html' | relative_url }}" title="Aodi Wu CV preview" loading="lazy"></iframe>
 </div>
 
 </div>
@@ -28,11 +28,11 @@ author_profile: true
 # 简历
 
 <div class="cv-actions">
-  <a class="btn btn--primary" href="{{ '/files/cv.pdf' | relative_url }}" download="武奥迪简历.pdf" target="_self">下载 PDF</a>
+  <a class="btn btn--primary" href="{{ '/CV/cv.pdf' | relative_url }}" download="武奥迪简历.pdf" target="_self">下载 PDF</a>
 </div>
 
 <div class="cv-preview-wrap">
-  <iframe class="cv-preview" src="{{ '/files/cv.html' | relative_url }}" title="武奥迪简历在线预览" loading="lazy"></iframe>
+  <iframe class="cv-preview" src="{{ '/CV/cv.html' | relative_url }}" title="武奥迪简历在线预览" loading="lazy"></iframe>
 </div>
 
 </div>

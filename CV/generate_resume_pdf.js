@@ -1,6 +1,7 @@
-// Usage: node generate_resume_pdf.js
-// Output: 武奥迪_计算机_博士在读简历.html and 武奥迪_计算机_博士在读简历.pdf
-// Style: updated from 原始资料/武奥迪研究生简历_未更新版.pdf, organized by the personal homepage structure.
+// Usage: cd CV && node generate_resume_pdf.js
+// Output (all under CV/):
+//   武奥迪_计算机_博士在读简历.html / .pdf
+//   cv.html / cv.pdf  (the stable public copies referenced by /cv/ page)
 // Optional visual debug: set RESUME_PREVIEW=1 to also write 武奥迪_计算机_博士在读简历.preview.png.
 
 const fs = require("fs");
@@ -9,14 +10,12 @@ const path = require("path");
 const { createRequire } = require("module");
 
 const rootDir = __dirname;
+const repoRoot = path.join(rootDir, "..");
 const htmlPath = path.join(rootDir, "武奥迪_计算机_博士在读简历.html");
 const pdfPath = path.join(rootDir, "武奥迪_计算机_博士在读简历.pdf");
-const legacyHtmlPath = path.join(rootDir, "武奥迪_博士后申请简历.html");
-const legacyPdfPath = path.join(rootDir, "武奥迪_博士后申请简历.pdf");
-const publicResumeDir = path.join(rootDir, "files");
-const publicHtmlPath = path.join(publicResumeDir, "cv.html");
-const publicPdfPath = path.join(publicResumeDir, "cv.pdf");
-const avatarPath = path.join(rootDir, "images", "wuaodi-512x512.png");
+const publicHtmlPath = path.join(rootDir, "cv.html");
+const publicPdfPath = path.join(rootDir, "cv.pdf");
+const avatarPath = path.join(repoRoot, "images", "wuaodi-512x512.png");
 const previewPath = path.join(rootDir, "武奥迪_计算机_博士在读简历.preview.png");
 const shouldWritePreview = process.env.RESUME_PREVIEW === "1";
 
@@ -430,9 +429,7 @@ const html = `<!doctype html>
 </html>`;
 
 async function main() {
-  fs.mkdirSync(publicResumeDir, { recursive: true });
   fs.writeFileSync(htmlPath, html, "utf8");
-  fs.writeFileSync(legacyHtmlPath, html, "utf8");
   fs.writeFileSync(publicHtmlPath, html, "utf8");
 
   const { chromium } = loadPlaywright();
@@ -450,13 +447,10 @@ async function main() {
     await page.screenshot({ path: previewPath, fullPage: true });
   }
   await browser.close();
-  fs.copyFileSync(pdfPath, legacyPdfPath);
   fs.copyFileSync(pdfPath, publicPdfPath);
 
   console.log(`HTML: ${htmlPath}`);
   console.log(`PDF: ${pdfPath}`);
-  console.log(`Compatibility HTML: ${legacyHtmlPath}`);
-  console.log(`Compatibility PDF: ${legacyPdfPath}`);
   console.log(`Public HTML: ${publicHtmlPath}`);
   console.log(`Public PDF: ${publicPdfPath}`);
   if (shouldWritePreview) {
