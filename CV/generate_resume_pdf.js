@@ -11,12 +11,10 @@ const { createRequire } = require("module");
 
 const rootDir = __dirname;
 const repoRoot = path.join(rootDir, "..");
-const htmlPath = path.join(rootDir, "武奥迪_计算机_博士在读简历.html");
-const pdfPath = path.join(rootDir, "武奥迪_计算机_博士在读简历.pdf");
-const publicHtmlPath = path.join(rootDir, "cv.html");
-const publicPdfPath = path.join(rootDir, "cv.pdf");
+const htmlPath = path.join(rootDir, "cv.html");
+const pdfPath = path.join(rootDir, "cv.pdf");
 const avatarPath = path.join(repoRoot, "images", "wuaodi-512x512.png");
-const previewPath = path.join(rootDir, "武奥迪_计算机_博士在读简历.preview.png");
+const previewPath = path.join(rootDir, "cv.preview.png");
 const shouldWritePreview = process.env.RESUME_PREVIEW === "1";
 
 function loadPlaywright() {
@@ -92,17 +90,18 @@ function section(title, body) {
 }
 
 function educationItem(school, degree, time, city, details) {
+  const headTime = !degree && city ? `${time} · ${city}` : time;
   return `
     <div class="edu item">
       <div class="item-head">
         <strong>${esc(school)}</strong>
-        <span>${esc(time)}</span>
+        <span>${esc(headTime)}</span>
       </div>
-      <div class="item-sub">
+      ${degree ? `<div class="item-sub">
         <span>${esc(degree)}</span>
         <span>${esc(city)}</span>
-      </div>
-      <p>${esc(details)}</p>
+      </div>` : ""}
+      ${details ? `<p>${esc(details)}</p>` : ""}
     </div>
   `;
 }
@@ -114,7 +113,7 @@ function expItem(title, time, points) {
         <strong>${esc(title)}</strong>
         ${time ? `<span>${esc(time)}</span>` : ""}
       </div>
-      ${bullets(points.map(esc))}
+      ${bullets(points)}
     </div>
   `;
 }
@@ -195,8 +194,7 @@ const html = `<!doctype html>
       display: grid;
       grid-template-columns: 17mm 1fr;
       min-width: 0;
-      white-space: normal;
-      word-break: break-all;
+      white-space: nowrap;
     }
     .contact strong {
       display: inline-block;
@@ -309,74 +307,37 @@ const html = `<!doctype html>
           <div><strong>主页</strong><span>${anchor("https://wuaodi.github.io/")}</span></div>
           <div><strong>GitHub</strong><span>${anchor("https://github.com/wuaodi")}</span></div>
           <div><strong>方向</strong><span>具身智能体、多模态感知、仿真到真机验证</span></div>
-          <div><strong>位置</strong><span>北京 / 中国科学院大学</span></div>
+          <div><strong>岗位</strong><span>具身agent / 数据</span></div>
         </div>
       </div>
       <img class="avatar" src="${avatar}" alt="武奥迪">
     </header>
 
     ${section(
-      "关于我",
-      `<div class="summary">${lines([
-        "我是中国科学院大学计算机应用技术博士生，导师为万雪研究员，在中科院空间应用工程与技术中心开展研究。",
-        "我的研究面向空间具身智能，关注具身智能体、多模态感知与仿真到真机验证。过去的工作把 VLM Agent、多模态感知、相对导航和真实机器人/在轨平台连接起来，形成从数据构建、模型训练推理、算法部署到闭环验证的完整链条。"
-      ])}</div>`
-    )}
-
-    ${section(
       "教育经历",
       educationItem(
-        "中国科学院大学",
-        "计算机应用技术 博士 · 中科院空间应用工程与技术中心 · 导师：万雪 研究员",
+        "中国科学院大学 · 博士 · 计算机应用技术",
+        "中科院空间应用工程与技术中心 · 导师：万雪 研究员 · 研究方向：具身智能体、多模态感知、仿真到真机验证",
         "2023年09月 - 至今（预计2026年12月毕业）",
         "北京",
-        "研究方向：具身智能体、多模态感知、仿真到真机验证。"
+        ""
       ) +
         educationItem(
-          "中国科学院大学",
-          "计算机应用技术 硕士 · 中科院空间应用工程与技术中心 · 导师：万雪 研究员",
+          "中国科学院大学 · 硕士 · 计算机应用技术",
+          "中科院空间应用工程与技术中心 · 导师：万雪 研究员 · 研究方向：空间在轨服务、跨域目标感知、相对导航、空间相机智能曝光对焦调节 · GPA：3.78/4.0",
           "2020年09月 - 2023年06月",
           "北京",
-          "研究方向：空间在轨服务、跨域目标感知、相对导航、空间相机智能曝光对焦调节；GPA：3.78/4.0。"
+          ""
         ) +
         educationItem(
-          "南京航空航天大学",
-          "本科 · 自动控制系",
+          "南京航空航天大学 · 本科 · 自动控制系",
+          "",
           "2016年09月 - 2020年06月",
           "南京",
           "GPA：4.0/5.0，平均分 90，排名前 10%；获研究生推免资格，担任班级团支书；获江苏省电赛二等奖（无线充电小车爬坡）、南航校电赛一等奖（单片机编程）。"
         )
     )}
 
-    ${section(
-      "代表性工作",
-      expItem("SpaceMind：面向太空机器人的模块化自进化具身 VLM 智能体", "2025年 - 2026年", [
-        "提出面向空间机器人的 embodied VLM agent framework，将 LVM 大脑、MCP 工具库、专用小模型与技能模块解耦，支持 Standard / ReAct / Prospective 三种推理模式。",
-        "构建技能自进化机制，使智能体能够将失败经验沉淀为可复用技能；在 5 颗卫星、3 类任务、2 个环境下完成 192 次闭环运行。",
-        "UE5 仿真与真实机器人实验室使用同一份代码完成迁移验证，物理平台迁移成功率 100%。该工作对应机器人任务规划、工具调用、技能沉淀和 sim-to-real 闭环验证能力；会议论文被 IAA-SPAICE 2025 接收，期刊扩展版目前在 Acta Astronautica 返修中。"
-      ]) +
-        expItem("SpaceSense-Bench：航天器感知与位姿估计大规模多模态基准", "2025年 - 2026年", [
-          "构建包含 136 颗卫星、约 70 GB 时间同步 RGB 图像、深度图、256 线 LiDAR 点云的数据集，提供部件语义标注与高精度 6-DoF 位姿真值。",
-          "支持 2D/3D 检测、2D/3D 分割、点云分割、深度估计、6-DoF 位姿估计和多模态融合等任务；数据集、代码和工具箱已开源。",
-          "论文于 2026 年 6 月被 IROS 2026 接收；项目在 arXiv、HuggingFace 与项目主页发布，HuggingFace 下载量 2700+。"
-        ]) +
-        expItem("基于动态路由与空间推理的自动驾驶 VLM 增强方案", "2025年", [
-          "作为队长参加 IROS 2025 RoboSense Challenge，提出动态路由模块，将不同问题分发给对应专家提示，并结合显式多视图坐标系建模，缓解任务间提示干扰和后视相机方位混淆。",
-          "基于 Qwen2.5-VL-72B，Phase-1 干净数据 70.87%，Phase-2 受扰数据 72.85%，最终获得亚军与创新解决方案奖，可迁移到机器人多视角感知、空间关系理解和 VLM 决策评估。"
-        ]) +
-        expItem("CVPR 2024 SPARK 挑战赛：非合作航天器感知", "2024年", [
-          "面向仿真与真实卫星图像的航天器位姿估计与部件分割任务，参与集成多分割算法、深度估计、绝对定位与相对定位方法。",
-          "位姿估计赛道获得冠军（队员），部件分割赛道获得第 4 名（队长）。"
-        ]) +
-        expItem("硕士期间代表工作：达芬奇在轨服务卫星视觉感知与单目导航", "2020年 - 2023年", [
-          "围绕达芬奇空间在轨服务卫星，开展相机控制、视觉感知与单目相对导航研究，工作从算法研发、软硬件集成推进到在轨任务验证，已完成工程落地。",
-          "提出空间相机智能曝光与对焦控制方法，相关发明专利 CN 2023102948012 已授权；非合作航天器单目相对导航算法完成在轨验证，论文发表于 ICoSR 2022。",
-          "研究跨域航天器部件分割，提出边缘一致性训练策略，在下游分割任务中提升精度 5.1%，相关论文被 ICDIP 2025 接收；整体工作体现了视觉感知算法从训练、部署到真实任务验证的工程闭环能力。"
-        ])
-    )}
-  </main>
-
-  <main class="sheet">
     ${section(
       "实习经历",
       expItem("墨奇智能（Morphi Robot）｜具身智能实习生", "2026年05月 - 2026年08月", [
@@ -387,6 +348,36 @@ const html = `<!doctype html>
       ])
     )}
 
+    ${section(
+      "代表性工作",
+      expItem("SpaceMind：面向太空机器人的模块化自进化具身 VLM 智能体", "2025年 - 2026年", [
+        "<strong>会议论文被 IAA-SPAICE 2025 接收，期刊扩展版投至 SCI Q1 期刊 Acta Astronautica，当前返修中。</strong>",
+        "提出面向空间机器人的 embodied VLM agent framework，将 VLM 大脑、MCP 工具库、专用小模型与技能模块解耦，支持 Standard / ReAct / Prospective 三种推理模式。",
+        "构建技能自进化机制；在 5 颗卫星、3 类任务、2 个环境下完成 192 次闭环运行，UE5 仿真与真实机器人实验室共用代码，物理迁移成功率 100%。"
+      ]) +
+        expItem("SpaceSense-Bench：航天器感知与位姿估计大规模多模态基准", "2025年 - 2026年", [
+          "<strong>论文被 IROS 2026 接收，数据集在 HuggingFace 下载量 2700+。</strong>",
+          "构建包含 136 颗卫星、约 70 GB 时间同步 RGB 图像、深度图、256 线 LiDAR 点云的数据集，提供部件语义标注与高精度 6-DoF 位姿真值。",
+          "支持 2D/3D 检测、2D/3D 分割、点云分割、深度估计、6-DoF 位姿估计和多模态融合等任务；数据集、代码和工具箱已开源。"
+        ]) +
+        expItem("基于动态路由与空间推理的自动驾驶 VLM 增强方案", "2025年", [
+          "<strong>作为队长获 IROS 2025 RoboSense Challenge 亚军及创新解决方案奖。</strong>",
+          "提出动态路由模块，将不同问题分发给对应专家提示，并结合显式多视图坐标系建模，缓解任务间提示干扰和后视相机方位混淆。",
+          "基于 Qwen2.5-VL-72B，Phase-1 干净数据 70.87%，Phase-2 受扰数据 72.85%，方案可迁移到机器人多视角感知、空间关系理解和 VLM 决策评估。"
+        ]) +
+        expItem("CVPR 2024 SPARK 挑战赛：非合作航天器感知", "2024年", [
+          "<strong>位姿估计赛道冠军（队员），部件分割赛道第 4 名（队长）。</strong>",
+          "面向仿真与真实卫星图像的航天器位姿估计与部件分割任务，参与集成多分割算法、深度估计、绝对定位与相对定位方法。"
+        ]) +
+        expItem("硕士期间代表工作：达芬奇在轨服务卫星视觉感知与单目导航", "2020年 - 2023年", [
+          "<strong>完成达芬奇卫星视觉感知与单目导航的在轨任务验证；发明专利 CN 2023102948012 已授权，相关论文发表于 ICoSR 2022。</strong>",
+          "开展空间相机智能曝光与对焦控制、非合作航天器单目相对导航研究，算法完成软硬件集成并部署至 NVIDIA TX2。",
+          "研究跨域航天器部件分割，提出边缘一致性训练策略，在下游分割任务中提升精度 5.1%，相关论文被 ICDIP 2025 接收。"
+      ])
+    )}
+  </main>
+
+  <main class="sheet">
     ${section(
       "项目经历",
       expItem("中科院创新十六号卫星空间视觉导航演示验证（已发射）", "2021年09月 - 2022年12月", [
@@ -417,11 +408,11 @@ const html = `<!doctype html>
     ${section(
       "专业技能",
       `<div class="skills">
-        <p><strong>编程语言：</strong>Python、C++、MATLAB，熟悉 PyTorch 模型训练与实验分析。</p>
+        <p><strong>编程语言：</strong>Python、C++，熟悉 PyTorch 模型训练与实验分析、面向对象编程。</p>
         <p><strong>视觉感知：</strong>目标检测/分割、深度估计、6-DoF 位姿估计、相对导航、多模态融合。</p>
         <p><strong>具身智能：</strong>VLM Agent、MCP 工具调用、ReAct / Prospective 推理、技能自进化、任务闭环验证。</p>
-        <p><strong>仿真验证：</strong>UE5/Airsim 空间环境搭建，多传感器数据采集，仿真到真实迁移，真实机器人闭环实验。</p>
-        <p><strong>平台工具：</strong>Blender、ROS、Docker、Redis、GitHub、Jetson TX2 / Orin、空间相机、激光雷达。</p>
+        <p><strong>仿真验证：</strong>UE5/Airsim 环境搭建、Isaac Sim、多传感器数据采集、仿真到真实迁移、真实机器人闭环实验。</p>
+        <p><strong>平台工具：</strong>Blender、ROS、Docker、Redis、GitHub、Jetson TX2 / Orin、激光雷达。</p>
         <p><strong>语言能力：</strong>CET-6。</p>
       </div>`
     )}
@@ -430,8 +421,8 @@ const html = `<!doctype html>
       "研究兴趣",
       `<div class="skills">
         <p><strong>具身智能体：</strong>面向可泛化场景的感知、推理、工具调用与行动闭环。</p>
-        <p><strong>多模态感知：</strong>RGB / 深度 / LiDAR 航天器感知、部件理解、位姿估计与跨域泛化。</p>
-        <p><strong>系统验证：</strong>从 UE5/Airsim 仿真、多源数据构建到真实机器人平台迁移验证。</p>
+        <p><strong>多模态感知：</strong>RGB / 深度 / LiDAR 多模态感知、部件理解、位姿估计与跨域泛化。</p>
+        <p><strong>系统验证：</strong>从仿真、多源数据构建到真实机器人平台迁移验证。</p>
       </div>`
     )}
   </main>
@@ -440,7 +431,6 @@ const html = `<!doctype html>
 
 async function main() {
   fs.writeFileSync(htmlPath, html, "utf8");
-  fs.writeFileSync(publicHtmlPath, html, "utf8");
 
   const { chromium } = loadPlaywright();
   const browser = await launchBrowser(chromium);
@@ -457,12 +447,9 @@ async function main() {
     await page.screenshot({ path: previewPath, fullPage: true });
   }
   await browser.close();
-  fs.copyFileSync(pdfPath, publicPdfPath);
 
   console.log(`HTML: ${htmlPath}`);
   console.log(`PDF: ${pdfPath}`);
-  console.log(`Public HTML: ${publicHtmlPath}`);
-  console.log(`Public PDF: ${publicPdfPath}`);
   if (shouldWritePreview) {
     console.log(`Preview: ${previewPath}`);
   }
