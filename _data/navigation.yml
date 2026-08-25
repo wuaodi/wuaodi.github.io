@@ -8,6 +8,10 @@ main:
     title_zh: "教育"
     url: "/#education"
 
+  - title: "Experience"
+    title_zh: "实习经历"
+    url: "/#experience"
+
   - title: "News"
     title_zh: "动态"
     url: "/#news"

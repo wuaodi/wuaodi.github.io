@@ -2,6 +2,6 @@
 
 # Education
 
-- *2023.09 - Present* — **Ph.D. in Computer Application Technology**, University of Chinese Academy of Sciences.
-- *2020.09 - 2023.06* — **M.S. in Computer Application Technology**, University of Chinese Academy of Sciences.
-- *2016.09 - 2020.06* — **B.E. in Detection Guidance and Control Technology**, College of Automation, Nanjing University of Aeronautics and Astronautics.
+- *2023.09 - Present* — **Ph.D.**, Computer Application Technology, University of Chinese Academy of Sciences; expected graduation: December 2026.
+- *2020.09 - 2023.06* — **M.S.**, Computer Application Technology, University of Chinese Academy of Sciences.
+- *2016.09 - 2020.06* — **B.E.**, Department of Automatic Control, Nanjing University of Aeronautics and Astronautics.

@@ -6,12 +6,12 @@
 
 - **SpaceMind：面向在轨服务的模块化自演化具身 VLM 智能体**。  
   **吴傲迪**, 韩昊东, 罗旭波, 王锐烁, 何山, 万雪<sup>†</sup>。  
-  *IAA-SPAICE 2025；期刊扩展版在 Acta Astronautica 在审，2026。*  
+  *IAA-SPAICE 2025；期刊扩展版目前在 Acta Astronautica 返修中，2026。*  
   [[论文](https://arxiv.org/abs/2604.14399)] [[代码](https://github.com/wuaodi/SpaceMind)] [[项目主页](https://wuaodi.github.io/SpaceMind/)] [[视频](https://www.bilibili.com/video/BV1VfdzBrEpc/)]
 
 - **SpaceSense-Bench：面向航天器感知与位姿估计的大规模多模态基准**。  
   **吴傲迪** 等。  
-  *投稿至 IROS 2026，2026。*  
+  *IROS 2026 接收，2026 年 6 月。*  
   [[论文](https://arxiv.org/abs/2603.09320)] [[代码](https://github.com/wuaodi/SpaceSense-Bench)] [[项目主页](https://wuaodi.github.io/SpaceSense-Bench/)] [[数据集](https://huggingface.co/datasets/Alvin16/SpaceSense-Bench/tree/main/raw)]
 
 - **基于边缘一致性生成网络的跨域航天器部件分割**。  

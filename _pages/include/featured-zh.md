@@ -4,7 +4,7 @@
 
 <div class="paper-box">
   <div class="paper-box-image">
-    <div class="badge">IAA-SPAICE 2025 / Acta（在审）</div>
+    <div class="badge">IAA-SPAICE 2025 / Acta（返修中）</div>
     <img src="images/paper/spacemind-pipeline.png" alt="SpaceMind 框架">
   </div>
   <div class="paper-box-text" markdown="1">
@@ -29,7 +29,7 @@
 
 <div class="paper-box">
   <div class="paper-box-image">
-    <div class="badge">IROS 2026（在审）</div>
+    <div class="badge">IROS 2026（已接收，2026.06）</div>
     <img src="images/paper/spacesense-bench.png" alt="SpaceSense-Bench 概览">
   </div>
   <div class="paper-box-text" markdown="1">

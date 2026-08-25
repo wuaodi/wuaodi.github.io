@@ -4,7 +4,7 @@
 
 <div class="paper-box">
   <div class="paper-box-image">
-    <div class="badge">IAA-SPAICE 2025 / Acta (under review)</div>
+    <div class="badge">IAA-SPAICE 2025 / Acta (under revision)</div>
     <img src="images/paper/spacemind-pipeline.png" alt="SpaceMind pipeline">
   </div>
   <div class="paper-box-text" markdown="1">
@@ -29,7 +29,7 @@
 
 <div class="paper-box">
   <div class="paper-box-image">
-    <div class="badge">IROS 2026 (under review)</div>
+    <div class="badge">IROS 2026 (accepted, June 2026)</div>
     <img src="images/paper/spacesense-bench.png" alt="SpaceSense-Bench overview">
   </div>
   <div class="paper-box-text" markdown="1">

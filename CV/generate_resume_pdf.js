@@ -308,7 +308,7 @@ const html = `<!doctype html>
           <div><strong>邮箱</strong><span>wuaodi20@mails.ucas.ac.cn</span></div>
           <div><strong>主页</strong><span>${anchor("https://wuaodi.github.io/")}</span></div>
           <div><strong>GitHub</strong><span>${anchor("https://github.com/wuaodi")}</span></div>
-          <div><strong>方向</strong><span>具身智能体、多模态感知、太空机器人</span></div>
+          <div><strong>方向</strong><span>具身智能体、多模态感知、仿真到真机验证</span></div>
           <div><strong>位置</strong><span>北京 / 中国科学院大学</span></div>
         </div>
       </div>
@@ -319,7 +319,7 @@ const html = `<!doctype html>
       "关于我",
       `<div class="summary">${lines([
         "我是中国科学院大学计算机应用技术博士生，导师为万雪研究员，在中科院空间应用工程与技术中心开展研究。",
-        "我的研究面向空间具身智能，关注具身智能体、视觉感知与导航、仿真到真机验证。过去的工作把 VLM Agent、多模态感知、相对导航和真实机器人/在轨平台连接起来，形成从数据构建、模型训练推理、算法部署到闭环验证的完整链条。"
+        "我的研究面向空间具身智能，关注具身智能体、多模态感知与仿真到真机验证。过去的工作把 VLM Agent、多模态感知、相对导航和真实机器人/在轨平台连接起来，形成从数据构建、模型训练推理、算法部署到闭环验证的完整链条。"
       ])}</div>`
     )}
 
@@ -330,7 +330,7 @@ const html = `<!doctype html>
         "计算机应用技术 博士 · 中科院空间应用工程与技术中心 · 导师：万雪 研究员",
         "2023年09月 - 至今（预计2026年12月毕业）",
         "北京",
-        "研究方向：LVM具身智能体、多模态视觉感知、太空机器人。"
+        "研究方向：具身智能体、多模态感知、仿真到真机验证。"
       ) +
         educationItem(
           "中国科学院大学",
@@ -341,7 +341,7 @@ const html = `<!doctype html>
         ) +
         educationItem(
           "南京航空航天大学",
-          "探测制导与控制技术 本科 · 自动化学院",
+          "本科 · 自动控制系",
           "2016年09月 - 2020年06月",
           "南京",
           "GPA：4.0/5.0，平均分 90，排名前 10%；获研究生推免资格，担任班级团支书；获江苏省电赛二等奖（无线充电小车爬坡）、南航校电赛一等奖（单片机编程）。"
@@ -353,12 +353,12 @@ const html = `<!doctype html>
       expItem("SpaceMind：面向太空机器人的模块化自进化具身 VLM 智能体", "2025年 - 2026年", [
         "提出面向空间机器人的 embodied VLM agent framework，将 LVM 大脑、MCP 工具库、专用小模型与技能模块解耦，支持 Standard / ReAct / Prospective 三种推理模式。",
         "构建技能自进化机制，使智能体能够将失败经验沉淀为可复用技能；在 5 颗卫星、3 类任务、2 个环境下完成 192 次闭环运行。",
-        "UE5 仿真与真实机器人实验室使用同一份代码完成迁移验证，物理平台迁移成功率 100%。该工作对应机器人任务规划、工具调用、技能沉淀和 sim-to-real 闭环验证能力；会议论文被 IAA-SPAICE 2025 接收，期刊扩展版投稿 Acta Astronautica。"
+        "UE5 仿真与真实机器人实验室使用同一份代码完成迁移验证，物理平台迁移成功率 100%。该工作对应机器人任务规划、工具调用、技能沉淀和 sim-to-real 闭环验证能力；会议论文被 IAA-SPAICE 2025 接收，期刊扩展版目前在 Acta Astronautica 返修中。"
       ]) +
         expItem("SpaceSense-Bench：航天器感知与位姿估计大规模多模态基准", "2025年 - 2026年", [
           "构建包含 136 颗卫星、约 70 GB 时间同步 RGB 图像、深度图、256 线 LiDAR 点云的数据集，提供部件语义标注与高精度 6-DoF 位姿真值。",
           "支持 2D/3D 检测、2D/3D 分割、点云分割、深度估计、6-DoF 位姿估计和多模态融合等任务；数据集、代码和工具箱已开源。",
-          "论文投稿 IROS 2026；项目在 arXiv、HuggingFace 与项目主页发布，HuggingFace 下载量 2700+。"
+          "论文于 2026 年 6 月被 IROS 2026 接收；项目在 arXiv、HuggingFace 与项目主页发布，HuggingFace 下载量 2700+。"
         ]) +
         expItem("基于动态路由与空间推理的自动驾驶 VLM 增强方案", "2025年", [
           "作为队长参加 IROS 2025 RoboSense Challenge，提出动态路由模块，将不同问题分发给对应专家提示，并结合显式多视图坐标系建模，缓解任务间提示干扰和后视相机方位混淆。",
@@ -377,6 +377,16 @@ const html = `<!doctype html>
   </main>
 
   <main class="sheet">
+    ${section(
+      "实习经历",
+      expItem("墨奇智能（Morphi Robot）｜具身智能实习生", "2026年05月 - 2026年08月", [
+        "负责具身 agent 系统工具调用、意图理解、任务管理模块的设计与实现。",
+        "在 Isaac Sim 的 Behavior 1K 环境中验证智能体效果，任务完成度达 75.3%。",
+        "在 Isaac Sim 中搭建家庭服务场景，支持 45 个原子动作、37 个场景对象和 20 分钟长程任务验证。",
+        "实现并完成端侧 C++ 版本的部署验证。"
+      ])
+    )}
+
     ${section(
       "项目经历",
       expItem("中科院创新十六号卫星空间视觉导航演示验证（已发射）", "2021年09月 - 2022年12月", [

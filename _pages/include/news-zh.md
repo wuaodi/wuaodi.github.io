@@ -2,8 +2,9 @@
 
 # 动态
 
-- *2026.04* **SpaceMind** 期刊扩展版投稿至 **Acta Astronautica**。
-- *2026.03* **SpaceSense-Bench** 在 arXiv 与 HuggingFace 发布，论文投稿 **IROS 2026**。
+- *2026.06* **SpaceSense-Bench** 被 **IROS 2026** 接收。
+- *2026.04* **SpaceMind** 期刊扩展版在 **Acta Astronautica** 返修中。
+- *2026.03* **SpaceSense-Bench** 在 arXiv 与 HuggingFace 发布。
 - *2025.10* **IROS 2025 RoboSense Challenge** 获 **亚军** 与 **创新解决方案奖**。
 - *2025.07* **SpaceMind** 被 **IAA-SPAICE 2025** 接收 —— 面向在轨服务、融合大模型与小模型的 MCP 智能体。
 - *2025* 关于 **跨域航天器部件分割** 的工作被 **ICDIP 2025** 接收。

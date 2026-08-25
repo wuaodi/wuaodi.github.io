@@ -14,6 +14,8 @@ redirect_from:
 
 {% include_relative include/education.md %}
 
+{% include_relative include/experience.md %}
+
 {% include_relative include/news.md %}
 
 {% include_relative include/demos.md %}
@@ -31,6 +33,8 @@ redirect_from:
 {% include_relative include/intro-zh.md %}
 
 {% include_relative include/education-zh.md %}
+
+{% include_relative include/experience-zh.md %}
 
 {% include_relative include/news-zh.md %}
 

@@ -12,6 +12,7 @@
 - `_pages/include/`: homepage content fragments.
   - `intro*.md`: About / 关于我.
   - `news*.md`: recent news.
+  - `experience*.md`: bilingual internship experience, including the 2026.05-2026.08 Morphi Robot role.
   - `demos*.md`: video demos for SpaceMind and SpaceSense-Bench.
   - `featured*.md`: representative work cards.
   - `honers*.md`: honors and awards; spelling follows the existing repo.
@@ -31,6 +32,7 @@
 - `_config.yml`: edit identity, author, bio, contact, and site-level metadata here.
 - `_pages/include/featured-zh.md`: best source for current Chinese representative-work wording.
 - `_pages/include/intro-zh.md`: best source for current Chinese self-introduction wording.
+- `_pages/include/experience-zh.md` and `_pages/include/experience.md`: bilingual internship experience content.
 - `_pages/include/honers-zh.md`: best source for current awards wording.
 - `_data/navigation.yml`: includes the `CV / 简历` navigation item pointing to `/cv/`.
 - `_includes/head/custom.html`: includes the `.cv-actions` and `.cv-preview` styles for the CV page.
@@ -72,13 +74,14 @@
   - multimodal visual perception and navigation,
   - simulation-to-real / real-robot closed-loop validation,
   - engineering deployment and in-orbit validation.
+- Current homepage and resume updates include Morphi Robot internship experience from 2026.05 to 2026.08, IROS 2026 acceptance in 2026.06, and the SpaceMind Acta Astronautica extension under revision.
 - Homepage/GitHub links in the generated PDF should remain clickable. Recent validation showed 2 PDF link annotations.
 - The homepage navigation exposes `/cv/` (lowercase, Jekyll page), where users can preview `CV/cv.html` online and open/download `CV/cv.pdf`. The lowercase `/cv/` page and uppercase `/CV/` static folder are distinct URLs and do not collide on GitHub Pages.
 
 ## Current Resume Content Notes
 - Title block: `武奥迪  计算机 · 博士在读`.
 - Contact block currently uses `微信`, email, homepage, GitHub, direction, and location.
-- Direction wording: `具身智能体、多模态感知、太空机器人`.
+- Direction wording: `具身智能体、多模态感知、仿真到真机验证`.
 - About section should be less official than a template CV and closer to the Chinese homepage tone.
 - Education section includes expected PhD graduation: `预计2026年12月毕业`.
 - Representative work integrates publications and patents directly into work items; there is no separate `论文与专利` section.

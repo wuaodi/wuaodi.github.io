@@ -4,7 +4,7 @@
 - Embodied vision-language agents and tool-use reasoning
 - Multimodal spacecraft perception (RGB / depth / LiDAR)
 - Relative navigation and autonomous control
-- Simulation-to-real system validation
+- Simulation-to-real robot validation
 
 ## Contact
 
