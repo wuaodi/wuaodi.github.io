@@ -16,15 +16,11 @@ redirect_from:
 
 {% include_relative include/experience.md %}
 
-{% include_relative include/news.md %}
-
-{% include_relative include/demos.md %}
+{% include_relative include/honers.md %}
 
 {% include_relative include/featured.md %}
 
-{% include_relative include/honers.md %}
-
-{% include_relative include/others.md %}
+{% include_relative include/demos.md %}
 
 </div>
 
@@ -36,14 +32,10 @@ redirect_from:
 
 {% include_relative include/experience-zh.md %}
 
-{% include_relative include/news-zh.md %}
-
-{% include_relative include/demos-zh.md %}
+{% include_relative include/honers-zh.md %}
 
 {% include_relative include/featured-zh.md %}
 
-{% include_relative include/honers-zh.md %}
-
-{% include_relative include/others-zh.md %}
+{% include_relative include/demos-zh.md %}
 
 </div>

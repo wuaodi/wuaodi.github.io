@@ -11,12 +11,12 @@
 - `_pages/cv.md`: CV / 简历 page at `/cv/`; provides PDF open/download buttons and an iframe preview of the generated HTML resume.
 - `_pages/include/`: homepage content fragments.
   - `intro*.md`: About / 关于我.
-  - `news*.md`: recent news.
+  - `news*.md`: retained news fragments, currently not included on the homepage.
   - `experience*.md`: bilingual internship experience, including the 2026.05-2026.08 Morphi Robot role.
   - `demos*.md`: video demos for SpaceMind and SpaceSense-Bench.
   - `featured*.md`: representative work cards.
   - `honers*.md`: honors and awards; spelling follows the existing repo.
-  - `others*.md`: education, research interests, and contact.
+  - `others*.md`: retained research-interest/contact fragments, currently not included on the homepage.
 - `_includes/`: layout fragments for head, masthead, sidebar, SEO, analytics, scripts, and author profile.
 - `_layouts/default.html`: main page layout.
 - `_sass/` and `assets/css/`: site styling.
@@ -33,6 +33,7 @@
 - `_pages/include/featured-zh.md`: best source for current Chinese representative-work wording.
 - `_pages/include/intro-zh.md`: best source for current Chinese self-introduction wording.
 - `_pages/include/experience-zh.md` and `_pages/include/experience.md`: bilingual internship experience content.
+- `_pages/about.md`: homepage currently includes About, Education, Experience, Honors, Selected Work, and Demos sections.
 - `_pages/include/honers-zh.md`: best source for current awards wording.
 - `_data/navigation.yml`: includes the `CV / 简历` navigation item pointing to `/cv/`.
 - `_includes/head/custom.html`: includes the `.cv-actions` and `.cv-preview` styles for the CV page.

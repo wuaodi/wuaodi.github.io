@@ -12,22 +12,18 @@ main:
     title_zh: "实习经历"
     url: "/#experience"
 
-  - title: "News"
-    title_zh: "动态"
-    url: "/#news"
-
-  - title: "Demos"
-    title_zh: "视频"
-    url: "/#demos"
+  - title: "Honors"
+    title_zh: "荣誉"
+    url: "/#honors"
 
   - title: "Selected Work"
     title_zh: "代表性工作"
     url: "/#featured"
 
+  - title: "Demos"
+    title_zh: "视频 Demo"
+    url: "/#demos"
+
   - title: "CV"
     title_zh: "简历"
     url: "/cv/"
-
-  - title: "Honors"
-    title_zh: "荣誉"
-    url: "/#honors"
