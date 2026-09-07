@@ -4,7 +4,7 @@
 
 <div class="paper-box">
   <div class="paper-box-image">
-    <div class="badge">IAA-SPAICE 2025 / Acta (under revision)</div>
+    <div class="badge">IAA-SPAICE 2025 / Acta (accepted, SCI Q1)</div>
     <img src="images/paper/spacemind-pipeline.png" alt="SpaceMind pipeline">
   </div>
   <div class="paper-box-text" markdown="1">

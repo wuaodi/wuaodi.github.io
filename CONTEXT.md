@@ -84,7 +84,7 @@
 - Education section includes expected PhD graduation: `预计2026年12月毕业`.
 - Representative work integrates publications and patents directly into work items; there is no separate `论文与专利` section.
 - Representative work currently includes:
-  - SpaceMind: `面向太空机器人的模块化自进化具身 VLM 智能体`.
+  - SpaceMind: `面向机器人的模块化自进化具身 VLM 智能体`.
   - SpaceSense-Bench: multimodal spacecraft perception benchmark.
   - RoboSense: `基于动态路由与空间推理的自动驾驶 VLM 增强方案`.
   - CVPR 2024 SPARK challenge.

@@ -4,7 +4,7 @@
 
 <div class="paper-box">
   <div class="paper-box-image">
-    <div class="badge">IAA-SPAICE 2025 / Acta（返修中）</div>
+    <div class="badge">IAA-SPAICE 2025 / Acta（已接收，SCI Q1）</div>
     <img src="images/paper/spacemind-pipeline.png" alt="SpaceMind 框架">
   </div>
   <div class="paper-box-text" markdown="1">
@@ -92,7 +92,7 @@
 
 - 位姿估计赛道：获得第 1 名（**队员**）。
 - 部件分割赛道：获得第 4 名（**队长**）。
-- 在 SPARK 2024 数据集上集成多分割算法与深度估计，融合绝对定位与相对定位。
+- 在 SPARK 2024 数据集上集成优化分割算法与深度估计，融合绝对定位与相对定位导航。
 
 </div>
 </div>
