@@ -26,6 +26,7 @@
 - `CV/`: dedicated folder for all resume-related files (generator script, generated HTML/PDF, and the public copies served at `/CV/`).
 - `CV/generate_resume_pdf.js`: standalone Node/Playwright script that generates the resume HTML and PDF.
 - `CV/cv.html` / `CV/cv.pdf`: stable public resume paths used by the `/cv/` page.
+- `CV/个人信息.txt`: UTF-8 plain-text application material with identity, education, internships, dated projects, English publication titles and summaries, competitions, awards, patent, skills, and copy-ready introductions. Unknown dates and certificate details are listed at the end for confirmation.
 - `CV/武奥迪_计算机_博士在读简历.html` / `CV/武奥迪_计算机_博士在读简历.pdf`: generated current resume outputs.
 
 ## Key Files
@@ -72,7 +73,7 @@
   - multimodal visual perception and navigation,
   - simulation-to-real / real-robot closed-loop validation,
   - engineering deployment and in-orbit validation.
-- Current homepage and resume updates include Morphi Robot internship experience from 2026.05 to 2026.08, IROS 2026 acceptance in 2026.06, and the SpaceMind Acta Astronautica extension under revision.
+- Current homepage and resume updates include Morphi Robot internship experience from 2026.05 to 2026.08, IROS 2026 acceptance in 2026.06, and acceptance of the SpaceMind Acta Astronautica extension. Older `pub*.md` and `news*.md` fragments still say the extension is under revision; use the current resume and featured-work sections for its status.
 - Homepage/GitHub links in the generated PDF should remain clickable. Recent validation showed 2 PDF link annotations.
 - The homepage navigation exposes `/cv/` (lowercase, Jekyll page), where users can preview `CV/cv.html` online and open/download `CV/cv.pdf`. The lowercase `/cv/` page and uppercase `/CV/` static folder are distinct URLs and do not collide on GitHub Pages.
 
@@ -105,3 +106,4 @@
 - For resume wording, prefer current homepage Chinese content as the factual source, but adapt phrasing toward the target audience when requested.
 - For robotics-company resume variants, emphasize transferable robotics skills: embodied agents, tool-use reasoning, visual perception, multi-view spatial reasoning, sim-to-real, real-platform deployment, and closed-loop validation.
 - Avoid adding a separate publications section in the resume unless the user asks; the user preferred integrating papers/patents into representative work.
+- The separate plain-text application file intentionally has its own publications section as requested. Its CroSpace6D title, sixth-author attribution for Aodi Wu, and pages 6857-6863 were checked against the CVF CVPR 2024 Workshops paper page.

@@ -1,0 +1,256 @@
+武奥迪｜网申个人信息与经历素材
+整理日期：2026年09月09日
+
+一、基本信息
+
+姓名：武奥迪
+英文姓名：Aodi Wu
+当前身份：中国科学院大学计算机应用技术专业博士研究生
+培养单位：中国科学院空间应用工程与技术中心
+导师：万雪研究员
+预计毕业时间：2026年12月
+所在地：北京
+邮箱：wuaodi20@mails.ucas.ac.cn
+微信：18937531481
+个人主页：https://wuaodi.github.io/
+GitHub：https://github.com/wuaodi
+Google Scholar：https://scholar.google.com/citations?user=tBhUcJ8AAAAJ
+研究方向：具身智能体、多模态感知、仿真到真机验证
+求职方向：具身智能 Agent、机器人感知、多模态数据相关岗位
+
+
+二、教育经历
+
+1. 中国科学院大学｜博士研究生｜计算机应用技术
+起止时间：2023年09月—至今，预计2026年12月毕业
+培养单位：中国科学院空间应用工程与技术中心
+导师：万雪研究员
+研究方向：具身智能体、多模态感知、仿真到真机验证。
+
+2. 中国科学院大学｜硕士｜计算机应用技术
+起止时间：2020年09月—2023年06月
+培养单位：中国科学院空间应用工程与技术中心
+导师：万雪研究员
+GPA：3.78/4.0
+研究方向：空间在轨服务、跨域目标感知、相对导航、空间相机智能曝光与对焦调节。
+
+3. 南京航空航天大学｜本科｜自动控制系 探测制导与控制技术
+起止时间：2016年09月—2020年06月
+GPA：4.0/5.0
+平均分：90分
+专业排名：前10%
+其他情况：获得研究生推免资格，担任班级团支书。
+
+
+三、实习经历
+
+公司名称：墨奇智能（Morphi Robot）
+岗位名称：具身智能实习生
+起止时间：2026年05月—2026年08月
+工作内容与成果：
+1. 负责具身 Agent 系统中工具调用、意图理解和任务管理模块的设计与实现，支持从用户指令理解到任务执行的闭环。
+2. 在 Isaac Sim 的 Behavior 1K 环境中验证智能体效果，任务完成度达到75.3%。
+3. 在 Isaac Sim 中搭建家庭服务场景，支持45个原子动作、37个场景对象及20分钟长程任务验证。
+4. 将 Python 版本迁移为端侧 C++ 版本并完成真机部署，实现15分钟级长程任务调用，完成从语音输入到任务执行与 TTS 播报的全流程验证。
+
+整段复制版：
+2026年05月至2026年08月，在墨奇智能担任具身智能实习生，负责具身 Agent 系统工具调用、意图理解和任务管理模块的设计与实现。在 Isaac Sim 的 Behavior 1K 环境中验证智能体效果，任务完成度达到75.3%；搭建支持45个原子动作、37个场景对象的家庭服务场景，完成20分钟长程任务验证。将 Python 版本迁移为端侧 C++ 版本并完成真机部署，实现15分钟级长程任务调用，打通语音输入、任务执行与 TTS 播报流程。
+
+
+四、项目经历
+
+1. SpaceMind：面向在轨服务的模块化自演化具身 VLM 智能体
+起止时间：2025年—2026年（具体起止月份待补充）
+项目描述：面向空间机器人自主在轨服务任务，构建模块化具身视觉语言智能体框架，将 VLM 大脑、MCP 工具库、专用小模型与技能模块解耦，支持 Standard、ReAct、Prospective 三种推理模式。构建技能自演化机制，将失败经验转化为可复用技能，并在 UE5 仿真与真实机器人平台上开展闭环验证。
+项目成果：在5颗卫星、3类任务、2个环境下完成192次闭环运行；仿真与真实机器人实验室共用代码，所报告的物理迁移实验成功率为100%。相关工作获 IAA-SPAICE 2025 接收，期刊扩展版被 Acta Astronautica 接收。
+技术关键词：VLM Agent、MCP、ReAct、Prospective、技能自演化、UE5、仿真到真机迁移。
+项目链接：https://wuaodi.github.io/SpaceMind/
+代码链接：https://github.com/wuaodi/SpaceMind
+
+2. SpaceSense-Bench：航天器感知与位姿估计大规模多模态基准
+起止时间：2025年—2026年（具体起止月份待补充）
+项目描述：基于 Unreal Engine 5 构建航天器多模态感知数据集与评测基准，包含136颗卫星、约70 GB的时间同步 RGB 图像、深度图和256线 LiDAR 点云。提供像素级与点云级的7类部件语义标注及高精度6-DoF位姿真值，支持检测、分割、深度估计、位姿估计与多模态融合等任务。
+项目成果：论文被 IROS 2026 接收；数据集、代码和工具箱已开源，现有主页记录的 Hugging Face 数据集下载量为2700+。
+技术关键词：UE5、RGB/深度/LiDAR、多模态数据集、语义分割、6-DoF位姿估计。
+项目链接：https://wuaodi.github.io/SpaceSense-Bench/
+代码链接：https://github.com/wuaodi/SpaceSense-Bench
+数据集链接：https://huggingface.co/datasets/Alvin16/SpaceSense-Bench/tree/main/raw
+
+3. RoboSense：基于动态路由与空间推理的自动驾驶 VLM 增强方案
+起止时间：2025年（具体起止月份待补充；2025年10月获奖）
+项目角色：队长
+项目描述：针对多任务提示干扰及多视角空间关系理解问题，设计动态路由模块，将不同问题分发至对应专家提示。结合显式多视图坐标系建模及 Chain-of-Thought、Tree-of-Thought 推理，改善后视相机与左右方位混淆问题。
+项目成果：基于 Qwen2.5-VL-72B，Phase-1 干净数据成绩为70.87%，Phase-2 受扰数据成绩为72.85%；获得 IROS 2025 RoboSense Challenge 亚军及创新解决方案奖。
+技术关键词：Qwen2.5-VL、动态路由、多视图空间推理、提示设计、VLM评测。
+代码链接：https://github.com/wuaodi/UCAS-CSU-phase2
+
+4. 中科院在轨服务地面验证任务
+起止时间：2024年02月—2024年09月
+项目描述：面向在轨服务地面验证场景，提出目标检测与跟踪融合方法，负责感知模块工程化与地面测试，使用 Docker 隔离算法模块并完成抵近测试。
+项目成果：在无人机悬挂目标星由远及近飞行场景中验证感知输出稳定性，为控制模块提供平滑的目标中心点。
+技术关键词：目标检测、目标跟踪、Docker、感知工程化、地面闭环验证。
+
+5. 月球车原型系统自主导航算法地面验证
+起止时间：2023年05月—2023年10月
+项目描述：负责自主导航坐标系统建立，参与建图、定位、规划与控制一体化架构讨论，完成导航相机验收、内参标定和地面联调。
+项目成果：参与地面导航算法部署验证，支撑月面自主导航原型系统的闭环测试。
+技术关键词：自主导航、坐标系统、相机标定、定位与规划、地面联调。
+
+6. 中科院创新十六号卫星空间视觉导航演示验证
+起止时间：2021年09月—2022年12月
+项目描述：负责在轨目标检测、相对导航与相机控制算法部署，参与软硬件调试、数据/载荷在回路验证、发射前测试和发射后遥测判读。
+项目成果：算法部署于 NVIDIA TX2 边缘计算设备，支撑在轨服务演示验证；完成面向算力、时延和可靠性约束的工程适配，项目卫星已发射。
+技术关键词：目标检测、相对导航、相机控制、NVIDIA TX2、软硬件集成、在轨验证。
+
+7. 基于边缘一致性生成网络的跨域航天器部件分割
+起止时间：待补充（相关论文于2025年被 ICDIP 接收）
+项目描述：针对仿真图像与真实航天器图像之间的域差，研究跨域航天器部件分割，提出边缘一致性训练策略以增强部件结构信息的一致性。
+项目成果：现有简历记录下游分割精度提升5.1%；相关论文被 ICDIP 2025 接收，代码已开源。
+技术关键词：域适应、语义分割、生成网络、边缘一致性、仿真到真实泛化。
+代码链接：https://github.com/wuaodi/cross-domain_spacecraft_segmentation
+
+
+五、论文与技术报告
+
+1. SpaceMind
+原始英文名称：SpaceMind: A Modular and Self-Evolving Embodied VLM Agent for Autonomous On-orbit Servicing
+作者：Aodi Wu, Haodong Han, Xubo Luo, Ruisuo Wang, Shan He, Xue Wan
+本人署名：第一作者
+期刊/会议：Acta Astronautica；相关会议工作为 IAA-SPAICE 2025
+年份与状态：IAA-SPAICE 2025 接收；期刊扩展版于2026年被 Acta Astronautica 接收（SCI Q1，按当前简历及主页记录）
+论文内容：提出面向自主在轨服务的模块化、自演化具身 VLM 智能体框架，将技能、MCP 工具与推理机制解耦，支持 Standard、ReAct、Prospective 三种推理模式，并通过技能自演化复用失败经验。在仿真和真实机器人平台上开展192次闭环实验，验证系统的任务执行与迁移能力。
+论文链接：https://arxiv.org/abs/2604.14399
+
+2. SpaceSense-Bench
+原始英文名称：SpaceSense-Bench: A Large-Scale Multi-Modal Benchmark for Spacecraft Perception and Pose Estimation
+作者：Aodi Wu, Jianhong Zuo, Zeyuan Zhao, Xubo Luo, Ruisuo Wang, Xue Wan
+本人署名：第一作者
+会议：IEEE/RSJ International Conference on Intelligent Robots and Systems（IROS 2026）
+年份与状态：2026年06月接收
+论文内容：构建包含136颗卫星、约70 GB同步 RGB、深度和 LiDAR 数据的大规模航天器多模态基准，提供部件级语义标注及6-DoF位姿真值，支持航天器检测、分割、深度估计、位姿估计和多模态融合研究，并开放数据、代码及工具箱。
+论文链接：https://arxiv.org/abs/2603.09320
+
+3. 跨域航天器部件分割
+原始英文名称：Cross-domain Spacecraft Component Segmentation Based on Edge Consistency Generative Neural Network
+作者：Aodi Wu, Jianhong Zuo, Shengyang Zhang, Xue Wan
+本人署名：第一作者
+会议：ICDIP 2025
+年份与状态：2025年接收
+论文内容：针对仿真与真实航天器图像的跨域差异，提出基于边缘一致性生成网络的部件分割方法，通过边缘一致性训练增强结构信息保留和跨域泛化能力，现有简历记录下游分割精度提升5.1%。
+代码链接：https://github.com/wuaodi/cross-domain_spacecraft_segmentation
+
+4. CroSpace6D
+原始英文名称：CroSpace6D: Leveraging Geometric and Motion Cues for High-Precision Cross-Domain 6DoF Pose Estimation for Non-Cooperative Spacecrafts
+作者：Jianhong Zuo, Shengyang Zhang, Qianyu Zhang, Yutao Zhao, Baichuan Liu, Aodi Wu, Xue Wan, Leizheng Shu, Guohua Kang
+本人署名：第六作者
+会议：CVPR 2024 Workshops，AI4Space Workshop
+年份与状态：2024年发表，论文集页码6857—6863
+论文内容：面向非合作航天器单目6-DoF位姿估计，研究仿真与真实图像之间的跨域差异，利用几何、运动及语义一致性信息构建域适应位姿估计方法，在 SPARK2024 数据集上取得领先表现。
+论文链接：https://openaccess.thecvf.com/content/CVPR2024W/AI4Space/html/Zuo_CroSpace6D_Leveraging_Geometric_and_Motion_Cues_for_High-Precision_Cross-Domain_6DoF_CVPRW_2024_paper.html
+
+5. 非合作航天器单目相对导航
+原始英文名称：Non-cooperative Spacecraft Relative Navigation Based on Monocular Camera in Space On-orbit Servicing
+作者：Aodi Wu, Chaoming Si, Shengyang Zhang, Xue Wan, Leizheng Shu
+本人署名：第一作者
+会议：ICoSR 2022
+年份与状态：2022年会议论文，已应用于在轨服务任务
+论文内容：面向空间在轨服务中的非合作航天器，研究基于单目相机的相对导航方法，完成算法部署与在轨任务应用。现有主页记录导航范围为200米至10米，平均误差5.16%，在 NVIDIA TX2 上运行速度为10 FPS。
+论文链接：https://ieeexplore.ieee.org/abstract/document/10137152
+
+6. RoboSense 技术报告
+原始英文名称：Enhancing Vision-Language Models for Autonomous Driving through Dynamic Routing and Spatial Reasoning
+作者：Aodi Wu, Xubo Luo
+本人署名：第一作者
+成果类型：IROS 2025 RoboSense Challenge 技术报告
+年份：2025年
+报告内容：通过动态路由将问题分发至任务专属专家提示，结合多视图坐标系建模及思维链、思维树推理，改善自动驾驶场景中的多任务提示干扰和空间关系理解。基于 Qwen2.5-VL-72B 完成比赛评测，获得亚军及创新解决方案奖。
+报告/代码链接：https://github.com/wuaodi/UCAS-CSU-phase2
+
+
+六、竞赛经历
+
+1. IROS 2025 RoboSense Challenge
+时间：2025年10月（获奖时间）
+担任角色：队长
+竞赛内容：基于视觉语言模型开展自动驾驶场景理解与空间推理，设计动态路由及多视图空间推理方案，完成干净数据与受扰数据评测。
+竞赛成绩：亚军、创新解决方案奖；Phase-1 成绩70.87%，Phase-2 成绩72.85%。
+
+2. CVPR 2024 SPARK 航天器位姿估计挑战赛
+时间：2024年03月（现有简历记录时间）
+担任角色：队员
+竞赛内容：面向仿真与真实卫星图像的非合作航天器位姿估计，参与相关感知与导航算法集成优化。
+竞赛成绩：冠军。
+
+3. CVPR 2024 SPARK 航天器部件分割挑战赛
+时间：2024年03月（现有简历记录时间）
+担任角色：队长
+竞赛内容：面向航天器部件语义分割任务，参与多种分割算法与深度估计方法的集成优化。
+竞赛成绩：第4名。
+
+4. 江苏省电子电路设计竞赛
+时间：本科阶段，2016年—2020年之间（具体年份待补充）
+竞赛项目：无线充电小车爬坡。
+竞赛成绩：二等奖。
+
+5. 南京航空航天大学校电子设计竞赛
+时间：本科阶段，2016年—2020年之间（具体年份待补充）
+竞赛内容：单片机编程。
+竞赛成绩：一等奖。
+
+
+七、获奖情况
+
+2025年11月：中国科学院大学研究生论坛“航空宇航分论坛”第一名。
+2025年10月：IROS 2025 RoboSense Challenge 亚军，担任队长。
+2025年10月：IROS 2025 RoboSense Challenge 创新解决方案奖，担任队长。
+2024年03月：CVPR 2024 SPARK 航天器位姿估计挑战赛冠军，担任队员。
+2024年03月：CVPR 2024 SPARK 航天器部件分割挑战赛第4名，担任队长。
+本科阶段（2016年—2020年，具体获奖年份待补充）：国家励志奖学金。
+本科阶段（2016年—2020年，具体获奖年份待补充）：江苏省电子电路设计竞赛二等奖。
+本科阶段（2016年—2020年，具体获奖年份待补充）：南京航空航天大学校电子设计竞赛一等奖。
+
+
+八、专利情况
+
+专利名称：空间相机在轨智能曝光及对焦方法、系统和电子设备
+英文名称：Intelligent In-orbit Exposure and Focus Control Method, System and Electronic Equipment for Space Cameras
+发明人：武奥迪、万雪、舒磊正、左健宏、张晟洋
+本人排序：第一发明人
+专利编号：CN 2023102948012（按现有资料记录）
+专利类型：发明专利
+授权情况：已授权，现有资料记录年份为2023年
+内容简介：面向空间相机在轨工作场景，研究智能曝光与对焦控制方法，支持在轨目标成像及后续视觉感知、导航任务。
+
+
+九、专业技能与语言能力
+
+编程语言：Python、C++；熟悉面向对象编程。
+深度学习：熟悉 PyTorch 模型训练与实验分析。
+视觉感知：目标检测、语义分割、深度估计、6-DoF位姿估计、相对导航、多模态融合。
+具身智能：VLM Agent、MCP 工具调用、ReAct / Prospective 推理、技能自演化、长程任务管理与闭环验证。
+仿真与数据：UE5、AirSim、Isaac Sim、多传感器数据采集、多模态数据集构建、仿真到真实迁移。
+平台与工具：Blender、ROS、Docker、Redis、GitHub、Jetson TX2 / Orin、激光雷达。
+工程实践：端侧 C++ 部署、软硬件集成、相机标定、真实机器人闭环实验、在轨任务验证。
+英语水平：大学英语六级（CET-6）。
+
+
+十、个人简介与自我评价
+
+简短版：
+中国科学院大学计算机应用技术博士研究生，预计2026年12月毕业，研究方向为具身智能体、多模态感知与仿真到真机验证。具备 VLM Agent 系统研发、机器人端侧部署、多模态数据集构建及在轨任务验证经验，熟悉 Python、C++、PyTorch、UE5 和 Isaac Sim。
+
+详细版：
+我是中国科学院大学计算机应用技术博士研究生，培养单位为中国科学院空间应用工程与技术中心，导师为万雪研究员，预计2026年12月毕业。研究聚焦具身智能体、多模态感知和仿真到真机验证，具备从算法研究、数据构建到系统集成和真实平台部署的实践经验。曾在墨奇智能担任具身智能实习生，负责工具调用、意图理解与任务管理模块，完成仿真长程任务验证和真机端侧 C++ 部署。研究成果包括 SpaceMind 具身 VLM 智能体、SpaceSense-Bench 多模态航天器感知基准，相关论文被 Acta Astronautica 和 IROS 2026 接收。作为队长获得 IROS 2025 RoboSense Challenge 亚军及创新解决方案奖，作为队员获得 CVPR 2024 SPARK 位姿估计赛道冠军。
+
+
+十一、使用前补充与核对项
+
+1. 现有资料只将18937531481标注为微信，手机号如需填写请另行确认。
+2. 本科资料记录为“自动控制系”，网申要求的正式专业名称请以学籍或毕业证为准。
+3. SpaceMind、SpaceSense-Bench、RoboSense 及跨域部件分割项目的具体起止月份未记录，未根据论文年份推算项目周期。
+4. 本科竞赛、国家励志奖学金的具体获奖年月，以及竞赛名称的证书写法，需以证书为准；CVPR 2024 竞赛时间沿用当前简历的2024年03月记录。
+5. SpaceMind 状态采用当前简历和代表性工作页面中的“Acta Astronautica 已接收”；较旧的论文列表和动态仍写“返修中”。期刊正式出版年份、卷期、页码与 DOI 尚未在现有资料中记录。
+6. RoboSense 单列为技术报告；IROS、ICDIP、ICoSR 及 CVPR Workshops 按会议成果填写。网申若单独区分期刊论文和会议论文，请分别归类。
+7. 专利编号和年份沿用现有资料；如网申要求完整申请号、授权公告号或具体授权日期，请按专利证书补充。
+
+资料来源：当前简历 CV/generate_resume_pdf.js、个人主页中英文内容及论文列表；CroSpace6D 的完整英文题名、作者顺序与页码核对自 CVF 官方论文页面。文中论文指标及项目成果按已有资料整理，未记录的信息保留为待补充。
