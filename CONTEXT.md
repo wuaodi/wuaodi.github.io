@@ -27,7 +27,6 @@
 - `CV/generate_resume_pdf.js`: standalone Node/Playwright script that generates the resume HTML and PDF.
 - `CV/cv.html` / `CV/cv.pdf`: stable public resume paths used by the `/cv/` page.
 - `CV/个人信息.txt`: UTF-8 plain-text application material with identity, education, internships, dated projects, English publication titles and summaries, competitions, awards, patent, skills, and copy-ready introductions. Unknown dates and certificate details are listed at the end for confirmation.
-- `CV/武奥迪_计算机_博士在读简历.html` / `CV/武奥迪_计算机_博士在读简历.pdf`: generated current resume outputs.
 
 ## Key Files
 - `_config.yml`: edit identity, author, bio, contact, and site-level metadata here.
@@ -49,6 +48,7 @@
   cd D:\project\wuaodi.github.io\CV
   node generate_resume_pdf.js
   ```
+- If Playwright is missing or the bundled runtime cannot resolve `playwright-core`, install locally from the repo root: `npm.cmd install --prefix CV --no-save --package-lock=false playwright@1.60.0`. `CV/node_modules/` is ignored; installed Chrome/Edge can supply the browser.
 - Optional resume preview screenshot:
   ```powershell
   cd D:\project\wuaodi.github.io\CV
@@ -65,7 +65,9 @@
 - With `RESUME_PREVIEW=1`, the generator also writes `CV/cv.preview.png` for visual inspection.
 - The script embeds `images/wuaodi-512x512.png` (at repo root) as a data URI so the resume HTML/PDF does not depend on a relative image path; in the script this is resolved via `../images/wuaodi-512x512.png`.
 - It uses Playwright to render the HTML to A4 PDF. It first tries bundled Playwright, then falls back to a locally installed Chrome/Edge executable if Playwright's browser binary is unavailable.
-- The current resume is a two-page formal Chinese resume, visually based on the older graduate resume style: black/gray section bars, dense but readable text, and a top identity/contact block.
+- The resume uses two fixed A4 pages, deep-blue headings with thin rules, a retained photo, and dark body text for grayscale printing. Body text is 10.5 pt with 1.38 line height; metadata is 9.5 pt, item headings 11.5 pt, section headings 13 pt, and the name 24 pt. Margins are 12 mm horizontally and 10 mm vertically, with numbered footers.
+- Page 1 contains identity/contact, education, internship, SpaceMind, SpaceSense-Bench, and RoboSense. Page 2 continues representative work with SPARK and DaVinci, followed by projects, awards, skills, and research interests. The user prefers the original detailed wording: all 34 original paragraphs/bullets were restored and checked against PDF text, along with the original research directions and item titles. Only date formatting, label punctuation, and C++ spacing were normalized.
+- The generator waits for fonts/images and checks content clearance above each footer before exporting. Keep the 10.5 pt body size and preserve original wording; adjust spacing first, with only minimal text cuts if two pages cannot otherwise be maintained. Current section/item/list margins are 3.5/2/0.65 mm. Final validation should inspect the PDF itself, not only the HTML screenshot.
 - Current resume positioning: general `计算机 · 博士在读`, tuned toward embodied-intelligence / robotics company applications.
 - Current resume narrative emphasizes:
   - space embodied intelligence,
@@ -73,7 +75,7 @@
   - multimodal visual perception and navigation,
   - simulation-to-real / real-robot closed-loop validation,
   - engineering deployment and in-orbit validation.
-- Current homepage and resume updates include Morphi Robot internship experience from 2026.05 to 2026.08, IROS 2026 acceptance in 2026.06, and acceptance of the SpaceMind Acta Astronautica extension. Older `pub*.md` and `news*.md` fragments still say the extension is under revision; use the current resume and featured-work sections for its status.
+- The current resume dates the Morphi Robot internship to 2026.05–2026.09; homepage fragments previously used 2026.05–2026.08. Preserve the resume source dates during visual edits. IROS 2026 and the SpaceMind Acta Astronautica extension are accepted; older `pub*.md` and `news*.md` fragments still say the extension is under revision.
 - Homepage/GitHub links in the generated PDF should remain clickable. Recent validation showed 2 PDF link annotations.
 - The homepage navigation exposes `/cv/` (lowercase, Jekyll page), where users can preview `CV/cv.html` online and open/download `CV/cv.pdf`. The lowercase `/cv/` page and uppercase `/CV/` static folder are distinct URLs and do not collide on GitHub Pages.
 
@@ -82,7 +84,7 @@
 - Contact block currently uses `微信`, email, homepage, GitHub, direction, and target role.
 - Direction wording: `具身智能体、多模态感知、仿真到真机验证`.
 - About section should be less official than a template CV and closer to the Chinese homepage tone.
-- Education section includes expected PhD graduation: `预计2026年12月毕业`.
+- Education metadata includes expected PhD graduation: `预计 2026.12 毕业`; dates use compact `YYYY.MM` formatting.
 - Representative work integrates publications and patents directly into work items; there is no separate `论文与专利` section.
 - Representative work currently includes:
   - SpaceMind: `面向机器人的模块化自进化具身 VLM 智能体`.
