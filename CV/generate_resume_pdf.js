@@ -279,8 +279,8 @@ const html = `<!doctype html>
       grid-template-columns: minmax(0, 1fr) auto;
       gap: 3mm;
       margin-top: .8mm;
-      color: #414b55;
-      font-size: 9.5pt;
+      color: inherit;
+      font-size: inherit;
     }
     p {
       margin: .8mm 0;

@@ -27,6 +27,7 @@
 - `CV/generate_resume_pdf.js`: standalone Node/Playwright script that generates the resume HTML and PDF.
 - `CV/cv.html` / `CV/cv.pdf`: stable public resume paths used by the `/cv/` page.
 - `CV/个人信息.txt`: UTF-8 plain-text application material with identity, education, internships, dated projects, English publication titles and summaries, competitions, awards, patent, skills, and copy-ready introductions. Unknown dates and certificate details are listed at the end for confirmation.
+- `金梯中期/`: source materials and completed mid-term forms for 2025 “金梯专项”课题 11, including the original task workbook, doctoral mid-term report, untouched templates, and filled Word documents.
 
 ## Key Files
 - `_config.yml`: edit identity, author, bio, contact, and site-level metadata here.
@@ -39,6 +40,7 @@
 - `_includes/head/custom.html`: includes the `.cv-actions` and `.cv-preview` styles for the CV page.
 - `CV/generate_resume_pdf.js`: resume content, styling, HTML generation, PDF rendering, and output paths are all in this one file.
 - `原始资料/武奥迪研究生简历_未更新版.pdf`: older formal two-page resume used as the visual style reference.
+- `金梯中期/待填写/`: completed quantitative-target form, progress report, and separate mentor evaluations for 万雪 and 高扬.
 
 ## Entry Points And Commands
 - Local Jekyll preview: `bash run_server.sh` from repo root. It runs `bundle exec jekyll liveserve`; run `bundle install` first if needed.
@@ -102,6 +104,7 @@
 - `goal_todo.md` may contain user edits; do not overwrite it unless explicitly asked.
 - `assets/js/main.min.js` is precompiled; editing `assets/js/_main.js` alone will not automatically update the live minified script.
 - Editing `_config.yml` usually requires restarting Jekyll for local preview.
+- The completed 金梯 forms intentionally use an expected graduation date of 2027.01 and a task period of 2025.11-2027.01, while the resume still says 2026.12. Mentor signatures and signing dates remain blank for manual confirmation.
 
 ## Notes For Future Sessions
 - The homepage is bilingual; update `*-zh.md` and English counterpart files together when the change is content-facing.
