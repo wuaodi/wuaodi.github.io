@@ -27,3 +27,7 @@ main:
   - title: "CV"
     title_zh: "简历"
     url: "/cv/"
+
+  - title: "Blog"
+    title_zh: "博客"
+    url: "/blog/"

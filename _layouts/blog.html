@@ -1,0 +1,53 @@
+<!-- 博客共用布局；正文在 _pages/blog/，本地预览使用 bundle exec jekyll serve。 -->
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | escape }} · 武奥迪</title>
+    <meta name="description" content="{{ page.description | escape }}">
+    <meta property="og:title" content="{{ page.title | escape }}">
+    <meta property="og:description" content="{{ page.description | escape }}">
+    <meta property="og:type" content="{% if page.toc %}article{% else %}website{% endif %}">
+    <meta property="og:locale" content="zh_CN">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="icon" type="image/png" href="{{ '/images/favicon-32x32.png' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#content">跳至正文</a>
+    <header class="site-header">
+      <a class="site-name" href="{{ '/' | relative_url }}">武奥迪 <span>Aodi Wu</span></a>
+      <nav aria-label="主导航">
+        <a href="{{ '/' | relative_url }}">主页</a>
+        <a href="{{ '/blog/' | relative_url }}" {% unless page.toc %}aria-current="page"{% endunless %}>博客</a>
+      </nav>
+    </header>
+    <main id="content" class="{% if page.toc %}article-layout{% else %}index-layout{% endif %}">
+      {% if page.toc %}
+      <aside class="article-nav" aria-label="文章目录">
+        <a class="back-link" href="{{ '/blog/' | relative_url }}">← 全部文章</a>
+        <p class="eyebrow">本文目录</p>
+        <nav>
+          {% for item in page.toc %}
+          <a href="#{{ item.id }}"><span>{{ forloop.index | prepend: '0' }}</span>{{ item.title }}</a>
+          {% endfor %}
+        </nav>
+      </aside>
+      {% endif %}
+      <article>
+        <header class="article-header">
+          <p class="eyebrow">{% if page.toc %}分享与记录 <span class="meta-divider">/</span> 2026{% else %}NOTES & FINDS{% endif %}</p>
+          <h1>{{ page.title }}</h1>
+          <p class="description">{{ page.description }}</p>
+          {% if page.updated %}<p class="article-meta">武奥迪 <span>·</span> 更新于 <time datetime="{{ page.updated }}">{{ page.updated_label }}</time></p>{% endif %}
+        </header>
+        <div class="prose">{{ content }}</div>
+        {% if page.toc %}
+        <div class="article-end"><span>持续使用，持续更新。</span><a href="#top">回到顶部 ↑</a></div>
+        {% endif %}
+      </article>
+    </main>
+    <footer class="site-footer"><span>武奥迪 · Aodi Wu</span><a href="{{ '/' | relative_url }}">返回个人主页 ↗</a></footer>
+  </body>
+</html>
