@@ -2,11 +2,11 @@
 
 # Work Experience
 
-## <img class="work-experience-logo" src="{{ '/images/pokebot-logo.svg' | relative_url }}" width="28" height="28" alt=""> PokeBot
+## <a href="https://www.pokebot.com/" target="_blank" rel="noopener"><img class="work-experience-logo" src="{{ '/images/pokebot-logo.svg' | relative_url }}" width="28" height="28" alt="Visit the PokeBot website"></a> PokeBot
 
 Embodied AI Agent Researcher
 
-## <img class="work-experience-logo" src="{{ '/images/morphi-logo.svg' | relative_url }}" width="28" height="28" alt=""> Morphi Robot
+## <a href="https://www.morphi.com/" target="_blank" rel="noopener"><img class="work-experience-logo" src="{{ '/images/morphi-logo.svg' | relative_url }}" width="28" height="28" alt="Visit the Morphi Robot website"></a> Morphi Robot
 
 *June 2026 - October 2026* · Embodied AI Algorithm Intern
 
