@@ -2,11 +2,11 @@
 
 # 工作经历
 
-## <img class="work-experience-logo" src="{{ '/images/pokebot-logo.svg' | relative_url }}" alt=""> 破壳机器人
+## <img class="work-experience-logo" src="{{ '/images/pokebot-logo.svg' | relative_url }}" width="28" height="28" alt=""> 破壳机器人
 
 具身智能 Agent 研究员
 
-## <img class="work-experience-logo" src="{{ '/images/morphi-logo.svg' | relative_url }}" alt=""> 墨奇智能
+## <img class="work-experience-logo" src="{{ '/images/morphi-logo.svg' | relative_url }}" width="28" height="28" alt=""> 墨奇智能
 
 *2026.06 - 2026.10* · 具身算法实习生
 
