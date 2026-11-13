@@ -6,14 +6,12 @@ permalink: /blog/
 author_profile: false
 ---
 <div class="post-list">
-  {% assign articles = site.pages | where: 'layout', 'blog' | sort: 'updated' | reverse %}
+  {% assign articles = site.pages | where: 'blog_entry', true | sort: 'updated' | reverse %}
   {% for post in articles %}
-  {% if post.toc %}
   <a class="post-entry" href="{{ post.url | relative_url }}">
     <time datetime="{{ post.updated }}">{{ post.updated_label }}</time>
-    <div><h2>{{ post.title }}</h2><p>{{ post.description }}</p><span class="post-topics">工具 · 学习 · 科研</span></div>
+    <div><h2>{{ post.title }}</h2><p>{{ post.description }}</p><span class="post-topics">{{ post.topics }}</span></div>
     <span class="post-arrow" aria-hidden="true">↗</span>
   </a>
-  {% endif %}
   {% endfor %}
 </div>

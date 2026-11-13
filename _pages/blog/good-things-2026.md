@@ -4,6 +4,8 @@ title: 好东西分享2026
 description: 分享一些让我反复受益的好东西。
 permalink: /blog/good-things-2026/
 author_profile: false
+blog_entry: true
+topics: 工具 · 学习 · 科研
 updated: "2026-11"
 updated_label: 2026 年 11 月
 toc:
