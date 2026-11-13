@@ -13,4 +13,4 @@ Embodied AI Agent Researcher
 - Designed and implemented tool-calling, intent-understanding, and task-management modules for an embodied-agent system.
 - Evaluated the agent in the Isaac Sim Behavior 1K environment, achieving a **75.3%** task completion rate.
 - Built a household service scenario in Isaac Sim with **45** atomic actions and **37** scene objects, supporting **20-minute** long-horizon task validation.
-- Converted the Python implementation to an edge-side C++ version on the real robot and conducted deployment tests.
+- Deployed the C++ implementation on the robot, enabling tasks lasting about 15 minutes and validating the full workflow from voice input through task execution to text-to-speech output.
