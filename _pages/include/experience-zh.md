@@ -1,10 +1,14 @@
 <span class='anchor' id='experience'></span>
 
-# 实习经历
+# 工作经历
 
-## 墨奇智能
+## <img class="work-experience-logo" src="{{ '/images/pokebot-logo.svg' | relative_url }}" alt=""> 破壳机器人
 
-*2026.05 - 2026.08* · 具身智能实习生
+具身智能 Agent 研究员
+
+## <img class="work-experience-logo" src="{{ '/images/morphi-logo.svg' | relative_url }}" alt=""> 墨奇智能
+
+*2026.06 - 2026.10* · 具身算法实习生
 
 - 负责具身 agent 系统工具调用、意图理解、任务管理模块的设计与实现。
 - 在 Isaac Sim 的 Behavior 1K 环境中验证智能体效果，任务完成度达 **75.3%**。

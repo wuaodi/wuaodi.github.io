@@ -70,6 +70,14 @@
     font-size: 1em;
   }
 
+  .work-experience-logo {
+    width: 1.4em;
+    height: 1.4em;
+    margin-right: 0.3em;
+    vertical-align: middle;
+    object-fit: contain;
+  }
+
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;

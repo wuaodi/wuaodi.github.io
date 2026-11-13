@@ -1,10 +1,14 @@
 <span class='anchor' id='experience'></span>
 
-# Internship Experience
+# Work Experience
 
-## Morphi Robot
+## <img class="work-experience-logo" src="{{ '/images/pokebot-logo.svg' | relative_url }}" alt=""> PokeBot
 
-*May 2026 - August 2026* · Embodied Intelligence Intern
+Embodied AI Agent Researcher
+
+## <img class="work-experience-logo" src="{{ '/images/morphi-logo.svg' | relative_url }}" alt=""> Morphi Robot
+
+*June 2026 - October 2026* · Embodied AI Algorithm Intern
 
 - Designed and implemented tool-calling, intent-understanding, and task-management modules for an embodied-agent system.
 - Evaluated the agent in the Isaac Sim Behavior 1K environment, achieving a **75.3%** task completion rate.
